@@ -6,7 +6,7 @@ library(EML)
 datatable_metadata <-
   dplyr::tibble(filepath = c(
                              "data/butte_catch_edi.csv",
-                             "data/butte_repcature_edi.csv",
+                             "data/butte_recapture_edi.csv",
                              "data/butte_release_edi.csv",
                              "data/butte_trap_edi.csv"),
                 attribute_info = c("data-raw/metadata/butte_catch_metadata.xlsx",
