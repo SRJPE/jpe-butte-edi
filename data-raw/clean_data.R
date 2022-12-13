@@ -14,6 +14,7 @@ trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"))
 write_csv(trap, here::here("data", "butte_trap_edi.csv"))
 
 # TODO run is NA (is the join not working?)
+# TODO: forkLength, totalLength, and markCode are NA
 # TODO actualCount is still encoded. Need to add join
 recapture <- read_xlsx(here::here("data-raw", "butte_recapture_edi.xlsx"))
 write_csv(recapture, here::here("data","butte_recapture_edi.csv"))
@@ -23,6 +24,7 @@ release_fish <- read_xlsx(here::here("data-raw", "butte_releasefish_edi.xlsx"))
 write_csv(release_fish, here::here("data", "butte_releasefish_edi.csv"))
 
 # TODO we can remove the releaseID = 255 or releaseID = 0
+# TODO appliedMarkCode is NA
 release <- read_xlsx(here::here("data-raw", "butte_release_edi.xlsx"))
 write_csv(release, here::here("data","butte_release_edi.csv"))
 
