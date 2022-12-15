@@ -1,7 +1,7 @@
 library(tidyverse)
 library(readxl)
 
-# TODO run is NA (is the join not working?)
+
 # TODO do we need the releaseID column? Probably not.
 # Decided to leave releaseID so it is really clear that this does not include recapture fish
 # TODO actualCount is still encoded. Need to add join
@@ -13,7 +13,6 @@ write_csv(catch, here::here("data","butte_catch_edi.csv"))
 trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"))
 write_csv(trap, here::here("data", "butte_trap_edi.csv"))
 
-# TODO run is NA (is the join not working?)
 # TODO: forkLength, totalLength, and markCode are NA
 # TODO actualCount is still encoded. Need to add join
 recapture <- read_xlsx(here::here("data-raw", "butte_recapture_edi.xlsx"))
