@@ -1,6 +1,6 @@
 projectDescriptionID,releaseID,commonName,markedRun,markedLifeStage,markedFishOrigin,sourceOfFishSite,releaseSite,releaseSubSite,nReleased,releaseTime,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,appliedMarkCode
-0,0,Not applicable (n/a),Not recorded,Not recorded,Unknown,Not applicable,Not applicable,NA,0,1900-01-02T00:00:00Z,0,NA,NA,NA,NA
-0,255,Not applicable (n/a),Not recorded,Not recorded,Unknown,Not applicable,Not applicable,NA,0,1900-01-02T00:00:00Z,0,NA,NA,NA,NA
+0,0,Not applicable (n/a),Not recorded,Not recorded,Unknown,Not applicable,Not applicable,NA,0,1900-01-01T00:00:00Z,0,NA,NA,NA,NA
+0,255,Not applicable (n/a),Not recorded,Not recorded,Unknown,Not applicable,Not applicable,NA,0,1900-01-01T00:00:00Z,0,NA,NA,NA,NA
 11,0,Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable,Not applicable,NA,NA,NA,0,NA,NA,NA,NA
 11,255,Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable,Not applicable,NA,NA,NA,0,NA,NA,NA,NA
 11,256,Chinook salmon,Spring,Juvenile,Natural,NA,NA,NA,100,2021-01-06T13:48:05Z,7,Pigment / dye,Brown,Whole body,NA

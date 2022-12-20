@@ -26,7 +26,7 @@
       <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2022-12-19</pubDate>
+    <pubDate>2022-12-20</pubDate>
     <abstract>
       <para>&lt;emphasis role="strong"&gt;Abstract&lt;/emphasis&gt;</para>
       <para>
@@ -215,7 +215,7 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>run</attributeName>
+          <attributeName>atCaptureRun</attributeName>
           <attributeLabel>catch</attributeLabel>
           <attributeDefinition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis.</attributeDefinition>
           <measurementScale>
@@ -257,20 +257,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>mort</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Whether fish died due to being captured or handled.  Levels = c("Yes", "No")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Whether fish died due to being captured or handled.  Levels = c("Yes", "No")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>forkLength</attributeName>
           <attributeLabel>catch</attributeLabel>
           <attributeDefinition>Fork length of the fish measured in millimeters</attributeDefinition>
@@ -302,7 +288,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">1</maximum>
+                  <maximum exclusive="false">590</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -328,20 +314,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>actualCountID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>visitTime</attributeName>
           <attributeLabel>catch</attributeLabel>
           <attributeDefinition>Date and time of day associated with the trap visit.</attributeDefinition>
@@ -351,7 +323,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">42311.4137</minimum>
-                  <maximum exclusive="false">44742.4167</maximum>
+                  <maximum exclusive="false">44742.417</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -394,6 +366,34 @@
               <nonNumericDomain>
                 <textDomain>
                   <definition>Name of the trap or trap location. Levels = c("canal trap box", "Okie RST", "PP RST")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>finalRun</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Run designation revised after field visit.</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run designation revised after field visit.</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>actualCount</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -500,14 +500,28 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>run</attributeName>
+          <attributeName>atCaptureRun</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Run as assigned at the time of the capture.</attributeDefinition>
+          <attributeDefinition>Run as assigned at the time of the capture. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run as assigned at the time of the capture.</definition>
+                  <definition>Run as assigned at the time of the capture. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>finalRun</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Run revised after field visit. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Run revised after field visit. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -550,6 +564,20 @@
               <nonNumericDomain>
                 <textDomain>
                   <definition>Whether fish died due to being captured or handled.  Levels = c("Yes", "No")</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>actualCount</attributeName>
+          <attributeLabel>catch</attributeLabel>
+          <attributeDefinition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -610,20 +638,6 @@
                 </bounds>
               </numericDomain>
             </ratio>
-          </measurementScale>
-        </attribute>
-        <attribute>
-          <attributeName>actualCountID</attributeName>
-          <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
           </measurementScale>
         </attribute>
         <attribute>
