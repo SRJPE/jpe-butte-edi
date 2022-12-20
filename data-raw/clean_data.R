@@ -1,6 +1,7 @@
 library(tidyverse)
 library(readxl)
 
+# TODO methods document - bullets aren't showing up on xml preview
 # TODO catch and fork length maximum values are very large
 catch <- read_xlsx(here::here("data-raw", "butte_catch_edi.xlsx"),
                    sheet = "Catch_Raw_EDI",
