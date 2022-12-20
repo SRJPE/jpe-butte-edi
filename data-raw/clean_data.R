@@ -1,7 +1,7 @@
 library(tidyverse)
 library(readxl)
 
-
+# TODO catch and fork length maximum values are very large
 catch <- read_xlsx(here::here("data-raw", "butte_catch_edi.xlsx"),
                    sheet = "Catch_Raw_EDI",
                    col_types = c("numeric", "numeric", "numeric", "text", "numeric",
@@ -12,6 +12,8 @@ write_csv(catch, here::here("data","butte_catch_edi.csv"))
 
 # TODO what are the units used for discharge, waterVel, waterTemp, turbidity
 # TODO are there other environmental we want to add?
+# TODO trap siteName - are Okie RST and Parrot-Phelan RST the same?
+# TODO trap subSitenName - Okie RST vs. PP RST
 trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"))
 write_csv(trap, here::here("data", "butte_trap_edi.csv"))
 

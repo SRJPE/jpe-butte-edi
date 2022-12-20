@@ -28,7 +28,6 @@
     </associatedParty>
     <pubDate>2022-12-20</pubDate>
     <abstract>
-      <para>&lt;emphasis role="strong"&gt;Abstract&lt;/emphasis&gt;</para>
       <para>
     California Department of Fish and Wildlife (CDFW) conducts juvenile
     salmonid emigration monitoring on Butte Creek near Chico California
@@ -81,7 +80,7 @@
             <calendarDate>2015-11-03</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2022-03-10</calendarDate>
+            <calendarDate>2022-06-30</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -101,7 +100,45 @@
     <methods>
       <methodStep>
         <description>
-          <para>&lt;emphasis role="strong"&gt;Methods&lt;/emphasis&gt;</para>
+          <para>
+    Trap equipment
+  </para>
+          <para>
+    8-foot Rotary Screw Trap (RST)  
+  </para>
+          <para>
+    Diversion Screen Trap (DST)
+  </para>
+          <para>
+    Current trap location
+  </para>
+          <para>
+    Parrott-Phelan Diversion Dam (Butte Creek near Chico)
+  </para>
+          <para>
+    Monitoring schedule
+  </para>
+          <para>
+    October-June
+  </para>
+          <para>
+    Daily environmental data
+  </para>
+          <para>
+    Fish measurements
+  </para>
+          <para>
+    Fork length measurements to nearest mm taken for:  
+  </para>
+          <para>
+    Fish counts
+  </para>
+          <para>
+    Trap efficiency trials
+  </para>
+          <para>
+    Trap efficiency mark
+  </para>
         </description>
       </methodStep>
     </methods>
@@ -151,7 +188,7 @@
                 <enumeratedDomain>
                   <codeDefinition>
                     <code>11</code>
-                    <definition>Butte River RST program</definition>
+                    <definition>Butte Creek RST program</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -428,7 +465,7 @@
       <attributeList>
         <attribute>
           <attributeName>ProjectDescriptionID</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 11</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -436,7 +473,7 @@
                 <enumeratedDomain>
                   <codeDefinition>
                     <code>11</code>
-                    <definition>Butte River RST program</definition>
+                    <definition>Butte Creek RST program</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -445,7 +482,7 @@
         </attribute>
         <attribute>
           <attributeName>catchRawID</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Primary key in the CAMP CatchRaw table</attributeDefinition>
           <measurementScale>
             <ordinal>
@@ -459,7 +496,7 @@
         </attribute>
         <attribute>
           <attributeName>trapVisitID</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Foreign key to the CAMP TrapVisit table</attributeDefinition>
           <measurementScale>
             <ordinal>
@@ -473,7 +510,7 @@
         </attribute>
         <attribute>
           <attributeName>commonName</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Common name of species</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -487,7 +524,7 @@
         </attribute>
         <attribute>
           <attributeName>releaseID</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Foreign Key to the CAMP Release table</attributeDefinition>
           <measurementScale>
             <ordinal>
@@ -501,7 +538,7 @@
         </attribute>
         <attribute>
           <attributeName>atCaptureRun</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Run as assigned at the time of the capture. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -515,7 +552,7 @@
         </attribute>
         <attribute>
           <attributeName>finalRun</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Run revised after field visit. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -529,7 +566,7 @@
         </attribute>
         <attribute>
           <attributeName>fishOrigin</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Origin/production type of the fish. Levels = c("Hatchery", "Natural", "Unknown")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -543,7 +580,7 @@
         </attribute>
         <attribute>
           <attributeName>lifeStage</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", "Adult", "Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -557,7 +594,7 @@
         </attribute>
         <attribute>
           <attributeName>mort</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Whether fish died due to being captured or handled.  Levels = c("Yes", "No")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -571,7 +608,7 @@
         </attribute>
         <attribute>
           <attributeName>actualCount</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -585,7 +622,7 @@
         </attribute>
         <attribute>
           <attributeName>forkLength</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Fork length of the fish measured in millimeters</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -604,7 +641,7 @@
         </attribute>
         <attribute>
           <attributeName>totalLength</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Total length of the fish measured in millimeters</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -623,7 +660,7 @@
         </attribute>
         <attribute>
           <attributeName>n</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Number of fish actually handled/counted</attributeDefinition>
           <measurementScale>
             <ratio>
@@ -642,7 +679,7 @@
         </attribute>
         <attribute>
           <attributeName>visitTime</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Date and time of day associated with the trap visit.</attributeDefinition>
           <measurementScale>
             <dateTime>
@@ -658,7 +695,7 @@
         </attribute>
         <attribute>
           <attributeName>visitType</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", "Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -672,7 +709,7 @@
         </attribute>
         <attribute>
           <attributeName>siteName</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrott-Phelan RST")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -686,7 +723,7 @@
         </attribute>
         <attribute>
           <attributeName>subSiteName</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "Okie RST", "PP RST")</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -700,7 +737,7 @@
         </attribute>
         <attribute>
           <attributeName>markType</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>type of mark on fish</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -714,7 +751,7 @@
         </attribute>
         <attribute>
           <attributeName>markColor</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>color of mark on fish</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -728,7 +765,7 @@
         </attribute>
         <attribute>
           <attributeName>markPosition</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>position of mark on body of fish</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -742,7 +779,7 @@
         </attribute>
         <attribute>
           <attributeName>markCode</attributeName>
-          <attributeLabel>catch</attributeLabel>
+          <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>code identifying the type of mark</attributeDefinition>
           <measurementScale>
             <nominal>
@@ -784,18 +821,14 @@
         <attribute>
           <attributeName>projectDescriptionID</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. For Butte Creek data projectDescriptionID = 11.</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
-                    <code>2</code>
-                    <definition>Feather River RST Program</definition>
-                  </codeDefinition>
-                  <codeDefinition>
                     <code>11</code>
-                    <definition>Butte River RST program</definition>
+                    <definition>Butte Creek RST</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -1054,14 +1087,14 @@
         <attribute>
           <attributeName>projectDescriptionID</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table</attributeDefinition>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table.  For Butte Creek data projectDescriptionID = 11.</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
                 <enumeratedDomain>
                   <codeDefinition>
                     <code>11</code>
-                    <definition>Butte River RST program</definition>
+                    <definition>Butte Creek RST</definition>
                   </codeDefinition>
                 </enumeratedDomain>
               </nonNumericDomain>
@@ -1085,12 +1118,12 @@
         <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Name of the sampling site</attributeDefinition>
+          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrot-Phelan RST").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the sampling site</definition>
+                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrot-Phelan RST").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1099,12 +1132,12 @@
         <attribute>
           <attributeName>subSiteName</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Position of trap within the site</attributeDefinition>
+          <attributeDefinition>Position of trap within the site. Levels = c("canal trap box", "Okie RST", "PP RST")</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Position of trap within the site</definition>
+                  <definition>Position of trap within the site. Levels = c("canal trap box", "Okie RST", "PP RST")</definition>
                 </textDomain>
               </nonNumericDomain>
             </ordinal>
@@ -1129,12 +1162,12 @@
         <attribute>
           <attributeName>visitType</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Work that was done during visit to trap (luVisitType)</attributeDefinition>
+          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", "Unplanned restart",  "Not applicable (n/a)", "Service/adjust/clean trap")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Work that was done during visit to trap (luVisitType)</definition>
+                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", "Unplanned restart",  "Not applicable (n/a)", "Service/adjust/clean trap")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1143,12 +1176,12 @@
         <attribute>
           <attributeName>fishProcessed</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Describing if fish processed during trap visit</attributeDefinition>
+          <attributeDefinition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", "No catch data; fish released")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Describing if fish processed during trap visit</definition>
+                  <definition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", "No catch data; fish released")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1157,12 +1190,12 @@
         <attribute>
           <attributeName>trapFunctioning</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for description of how well trap is functioning when visit to trap began</attributeDefinition>
+          <attributeDefinition>Code for description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", "Trap not in service", "Trap stopped functioning", "Not recorded")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Code for description of how well trap is functioning when visit to trap began</definition>
+                  <definition>Code for description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", "Trap not in service", "Trap stopped functioning", "Not recorded")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
