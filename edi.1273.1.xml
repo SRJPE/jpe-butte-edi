@@ -26,7 +26,7 @@
       <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2022-12-20</pubDate>
+    <pubDate>2023-01-17</pubDate>
     <abstract>
       <para>
     California Department of Fish and Wildlife (CDFW) conducts juvenile
@@ -332,7 +332,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">11273</maximum>
+                  <maximum exclusive="false">1000</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -386,7 +386,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">42311.4137</minimum>
-                  <maximum exclusive="false">44742.417</maximum>
+                  <maximum exclusive="false">44929.4896</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -409,12 +409,14 @@
         <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrott-Phelan RST")</attributeDefinition>
+          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrott-Phelan RST")</definition>
+                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -423,12 +425,12 @@
         <attribute>
           <attributeName>subSiteName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "Okie RST", "PP RST")</attributeDefinition>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "PP RST", "n/a")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the trap or trap location. Levels = c("canal trap box", "Okie RST", "PP RST")</definition>
+                  <definition>Name of the trap or trap location. Levels = c("canal trap box", "PP RST", "n/a")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -463,7 +465,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>40640</numberOfRecords>
+      <numberOfRecords>42367</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>butte_recapture_edi.csv</entityName>
@@ -619,20 +621,6 @@
           </measurementScale>
         </attribute>
         <attribute>
-          <attributeName>mort</attributeName>
-          <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>Whether fish died due to being captured or handled.  Levels = c("Yes", "No")</attributeDefinition>
-          <measurementScale>
-            <nominal>
-              <nonNumericDomain>
-                <textDomain>
-                  <definition>Whether fish died due to being captured or handled.  Levels = c("Yes", "No")</definition>
-                </textDomain>
-              </nonNumericDomain>
-            </nominal>
-          </measurementScale>
-        </attribute>
-        <attribute>
           <attributeName>actualCount</attributeName>
           <attributeLabel>recapture</attributeLabel>
           <attributeDefinition>Whether the count (n) is an actual count or estimate. Levels = c("Yes", "No")</attributeDefinition>
@@ -713,7 +701,7 @@
               <dateTimeDomain>
                 <bounds>
                   <minimum exclusive="false">44203.4377</minimum>
-                  <maximum exclusive="false">44630.4168</maximum>
+                  <maximum exclusive="false">44303.4666</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -818,7 +806,7 @@
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>26</numberOfRecords>
+      <numberOfRecords>15</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>butte_release_edi.csv</entityName>
@@ -1083,8 +1071,22 @@
             </nominal>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>includeAnalysis</attributeName>
+          <attributeLabel>release</attributeLabel>
+          <attributeDefinition>Whether or not to include data in analysis</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Whether or not to include data in analysis</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
       </attributeList>
-      <numberOfRecords>20</numberOfRecords>
+      <numberOfRecords>16</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>butte_trap_edi.csv</entityName>
@@ -1144,12 +1146,14 @@
         <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrot-Phelan RST").</attributeDefinition>
+          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrot-Phelan RST").</definition>
+                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1158,12 +1162,12 @@
         <attribute>
           <attributeName>subSiteName</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Position of trap within the site. Levels = c("canal trap box", "Okie RST", "PP RST")</attributeDefinition>
+          <attributeDefinition>Position of trap within the site. Levels =c("canal trap box", "PP RST", "n/a")</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Position of trap within the site. Levels = c("canal trap box", "Okie RST", "PP RST")</definition>
+                  <definition>Position of trap within the site. Levels =c("canal trap box", "PP RST", "n/a")</definition>
                 </textDomain>
               </nonNumericDomain>
             </ordinal>
@@ -1225,6 +1229,25 @@
                 </textDomain>
               </nonNumericDomain>
             </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>counterAtStart</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Reading on the rotation counter at the beginning of trap visit</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <customUnit>number of rotations</customUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0</minimum>
+                  <maximum exclusive="false">427736</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
           </measurementScale>
         </attribute>
         <attribute>
@@ -1311,7 +1334,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">1.1</minimum>
-                  <maximum exclusive="false">1624</maximum>
+                  <maximum exclusive="false">1704</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1374,8 +1397,27 @@
             </ratio>
           </measurementScale>
         </attribute>
+        <attribute>
+          <attributeName>dissolvedOxygen</attributeName>
+          <attributeLabel>trap</attributeLabel>
+          <attributeDefinition>Level of dissolved oxygen measured</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>milligramPerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">1</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
       </attributeList>
-      <numberOfRecords>2038</numberOfRecords>
+      <numberOfRecords>2180</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
