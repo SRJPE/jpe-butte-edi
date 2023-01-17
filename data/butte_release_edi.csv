@@ -1,21 +1,17 @@
-projectDescriptionID,releaseID,commonName,markedRun,markedLifeStage,markedFishOrigin,sourceOfFishSite,releaseSite,releaseSubSite,nReleased,releaseTime,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,appliedMarkCode
-0,0,Not applicable (n/a),Not recorded,Not recorded,Unknown,Not applicable,Not applicable,NA,0,1900-01-01T00:00:00Z,0,NA,NA,NA,NA
-0,255,Not applicable (n/a),Not recorded,Not recorded,Unknown,Not applicable,Not applicable,NA,0,1900-01-01T00:00:00Z,0,NA,NA,NA,NA
-11,0,Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable,Not applicable,NA,NA,NA,0,NA,NA,NA,NA
-11,255,Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable (n/a),Not applicable,Not applicable,NA,NA,NA,0,NA,NA,NA,NA
-11,256,Chinook salmon,Spring,Juvenile,Natural,NA,NA,NA,100,2021-01-06T13:48:05Z,7,Pigment / dye,Brown,Whole body,NA
-11,257,Chinook salmon,Spring,NA,Natural,NA,NA,NA,100,2021-01-06T12:30:03Z,7,Pigment / dye,Brown,Whole body,NA
-11,258,Chinook salmon,Spring,NA,Natural,NA,NA,NA,100,2021-10-12T13:59:49Z,7,Pigment / dye,Brown,Whole body,NA
-11,259,Not applicable (n/a),NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-11,260,Not applicable (n/a),NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-11,261,Chinook salmon,Spring,Juvenile,Natural,NA,NA,NA,100,2021-01-06T12:30:03Z,6,Pigment / dye,Brown,Whole body,NA
-11,262,Not applicable (n/a),NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-11,263,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,249,2021-01-14T12:30:46Z,6,Pigment / dye,Brown,Whole body,NA
-11,264,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,109,2021-02-10T12:00:25Z,7,Pigment / dye,Brown,Whole body,NA
-11,265,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,349,2021-02-24T12:30:07Z,7,Pigment / dye,Brown,Whole body,NA
-11,266,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,197,2021-03-10T12:00:36Z,7,Pigment / dye,Brown,Whole body,NA
-11,267,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,160,2021-04-08T13:00:13Z,7,Pigment / dye,Brown,Whole body,NA
-11,268,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,500,2021-04-15T13:00:19Z,7,Pigment / dye,Brown,Whole body,NA
-11,269,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,250,2022-02-08T12:15:19Z,7,Pigment / dye,Brown,Whole body,NA
-11,270,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,249,2022-02-15T13:15:19Z,7,Pigment / dye,Brown,Whole body,NA
-11,271,Chinook salmon,Spring,Juvenile,Natural,NA,NA,n/a,185,2022-03-08T13:20:19Z,7,Pigment / dye,Brown,Whole body,NA
+projectDescriptionID,releaseID,commonName,markedRun,markedLifeStage,markedFishOrigin,sourceOfFishSite,releaseSite,releaseSubSite,nReleased,releaseTime,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,appliedMarkCode,includeAnalysis
+11,256,Chinook salmon,Spring,Juvenile,Natural,Parrott-Phelan canal trap box,Not applicable,NA,100,2021-01-06T13:48:05Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,257,Chinook salmon,Spring,NA,Natural,NA,Not applicable,NA,100,2021-01-06T12:30:03Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,258,Chinook salmon,Spring,NA,Natural,NA,Not applicable,NA,100,2021-10-12T13:59:49Z,7,Pigment / dye,Brown,Whole body,NA,No
+11,259,Not applicable (n/a),NA,NA,NA,NA,Not applicable,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,260,Not applicable (n/a),NA,NA,NA,NA,Not applicable,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,261,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,NA,100,2021-01-06T12:30:03Z,6,Pigment / dye,Brown,Whole body,NA,Yes
+11,262,Not applicable (n/a),NA,NA,NA,NA,Not applicable,NA,NA,NA,NA,NA,NA,NA,NA,NA
+11,263,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,249,2021-01-14T12:30:46Z,6,Pigment / dye,Brown,Whole body,NA,Yes
+11,264,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,109,2021-02-10T12:00:25Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,265,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,349,2021-02-24T12:30:07Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,266,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,197,2021-03-10T12:00:36Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,267,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,160,2021-04-08T13:00:13Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,268,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,500,2021-04-15T13:00:19Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,269,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,250,2022-02-08T12:15:19Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,270,Chinook salmon,Spring,Juvenile,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,n/a,249,2022-02-15T13:15:19Z,7,Pigment / dye,Brown,Whole body,NA,Yes
+11,271,Chinook salmon,Spring,Juvenile,Natural,NA,Parrott-Phelan e-test release site,n/a,185,2022-03-08T13:20:19Z,7,Pigment / dye,Brown,Whole body,NA,Yes

@@ -1,32 +1,38 @@
 library(tidyverse)
 library(readxl)
 
-# TODO catch and fork length maximum values are very largec
 catch <- read_xlsx(here::here("data-raw", "butte_catch_edi.xlsx"),
                    sheet = "Catch_Raw_EDI",
                    col_types = c("numeric", "numeric", "numeric", "text", "numeric",
                                 "text", "text", "text", "numeric", "numeric",
                                 "numeric", "date", "text", "text", "text",
-                                "text", "text"))
+                                "text", "text")) |>
+  mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
+                                TRUE ~ subSiteName),
+         siteName = case_when(siteName == "Okie RST" ~ "Parrot-Phelan RST",
+                              TRUE ~ siteName)) |> glimpse()
 write_csv(catch, here::here("data","butte_catch_edi.csv"))
 
-# TODO what are the units used for discharge, waterVel, waterTemp, turbidity
-# TODO are there other environmental we want to add?
-# TODO trap siteName - are Okie RST and Parrot-Phelan RST the same?
-# TODO trap subSitenName - Okie RST vs. PP RST
-trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"))
+
+trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"),
+                  sheet = "Trap_Visit_EDI") |>
+  mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
+                                 TRUE ~ subSiteName),
+         siteName = case_when(siteName == "Okie RST" ~ "Parrot-Phelan RST",
+                              TRUE ~ siteName),
+         dissolvedOxygen = as.numeric(dissolvedOxygen)) |> glimpse()
 write_csv(trap, here::here("data", "butte_trap_edi.csv"))
 
-# TODO: forkLength and totalLength are NA
-# TODO fix query to remove actualCountID
+# forkLength and totalLength are NA bc they haven't been measuring recaptured fish
+# removed actualcountID
 recapture <- read_xlsx(here::here("data-raw", "butte_recapture_edi.xlsx"),
                        sheet = "Recapture_EDI",
                        col_types = c("numeric", "numeric", "numeric", "text", "numeric",
+                                     "text", "text", "text", "text", "numeric",
+                                     "numeric", "numeric", "numeric", "numeric", "date",
                                      "text", "text", "text", "text", "text",
-                                     "text", "numeric", "numeric", "numeric", "numeric",
-                                     "date", "text", "text", "text", "text",
-                                     "text", "text", "text")) |>
-  select(-actualCountID)
+                                     "text", "text")) |>
+  select(-actualCountID) |> glimpse()
 write_csv(recapture, here::here("data","butte_recapture_edi.csv"))
 
 # I do not think we need to upload this right now but will have it available for in the future
@@ -39,7 +45,7 @@ release <- read_xlsx(here::here("data-raw", "butte_release_edi.xlsx"),
                      col_types = c("numeric", "numeric", "text", "text", "text",
                                    "text", "text", "text", "text", "numeric",
                                    "date", "numeric", "text", "text", "text",
-                                   "text"))
+                                   "text", "text")) |> glimpse()
 write_csv(release, here::here("data","butte_release_edi.csv"))
 
 # TODO write code that checks the data with lookups
