@@ -1,32 +1,36 @@
 ## Trap equipment
-
-The traps used were an 8-foot Rotary Screw Trap (RST) and a Diversion Screen Trap (DST).
+* A single 8-foot diameter rotary screw trap (RST)
+* Diversion screen trap (DST)
 
 ## Current trap location
-
-The current trap location is at the Parrott-Phelan Diversion Dam (Butte Creek near Chico).
+* Parrot-Phelan Diversion Dam on Butte Creek near Chico, California.
 
 ## Monitoring schedule
-
-October-June
-Continuously trapping except under high flows and unsafe working conditions, and traps were serviced daily within a 24-hour period, more if needed due to high debris amounts or fish catch.
+* October through June
+* Continuously trapping except under high flows and unsafe working conditions
+* Serviced daily within a 24-hour period, more if needed due to high debris amounts or fish catch
 
 ## Daily environmental data
-
-Daily environmental data collected were water temperature (Celsius) and flow (Cubic Feet per Second).
+* Water temperature (Celsius)
+* Flow (cubic feet per second)
 
 ## Fish measurements
+* Chinook salmon: 50 randomly selected
+* Steelhead: first 10
 
-Fork length measurements to nearest mm taken for Chinook (50 randomly selected), Steelhead (first 10), and non-salmonids (first 10; total length).
+Fork length measurements are taken to the nearest mm.
+
 
 ## Fish counts
-
-All fish not measured are plus counted by hand. If juvenile salmon are highly abundant, a simple weight count method is used to count Chinook in increments of 500-1,000 or more to speed up processing.
+* All fish not measured are plus counted by hand
+* If juvenile Chinook salmon are highly abundant, a simple weight count method is used to count fish in increments of 500-1,000 or more to speed up processing.
 
 ## Trap efficiency trials
-
-Natural origin Chinook captured in RST and DST are the source of released fish. Trap efficiency trials were conducted once weekly December-May across variable flow and environmental conditions as catch totals allow. A minimum of 3 consecutive days of fishing after the release date is required for a release to be included in analysis. Mortality between the release point and the trap is assumed to be negligible. Release site approximately 1 mile upstream of trapping site.
+* Natural origin juvenile Chinook salmon captured in the RST and DST are the source of released fish.
+* Frequency of once per week from December to May across variable flow and environmental conditions as catch totals allow. 
+* A minimum of three consecutive days of fishing after the release date is required for a release to be included in analyses.
+* Mortality between the release point and the trap is assumed to be negligible.  
+* Release site located approximately 1 mile upstream of the trapping site.
 
 ## Trap efficiency mark
-
-Fish are marked with Bismarck brown Y (BBY) whole body stain.
+* Fish are marked with Bismarck Brown Y (BBY) whole body stain. 
