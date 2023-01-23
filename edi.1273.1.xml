@@ -26,23 +26,38 @@
       <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-01-17</pubDate>
+    <pubDate>2023-01-23</pubDate>
     <abstract>
       <para>
-    California Department of Fish and Wildlife (CDFW) conducts juvenile
-    salmonid emigration monitoring on Butte Creek near Chico California
-    at the Parrott-Phelan Diversion Dam. Monitoring is conducted
-    annually from October through June utilizing an eight-foot rotary
-    screw trap (RST) and a diversion screen trap (DST). Data from this
-    monitoring is used to estimate juvenile spring-run Chinook salmon
+    The California Department of Fish and Wildlife (CDFW) conducts
+    juvenile salmonid emigration monitoring on Butte Creek at the
+    Parrott-Phelan Diversion Dam near Chico, California. Monitoring is
+    conducted annually from October through June utilizing an 8-ft
+    diameter rotary screw trap (RST) and a diversion screen trap (DST).
+    Data from this monitoring is used to estimate juvenile spring-run
+    Chinook salmon (</para>
+      <para>
+        <emphasis>Oncorhynchus tshawytscha</emphasis>
+      </para>
+      <para>)
     abundance and passage, identify alevin emergence timing, document
     juvenile size at emigration, and document rearing and emigration
     patterns. This data will also be used to inform the development of a
     juvenile production estimate (JPE) for spring-run Chinook salmon in
-    the Sacramento River Watershed as required by Incidental Take Permit
-    No. 2081-2019-006-00 issued by CDFW to California Department of
-    Water Resources (DWR) for the long-term operation of the State Water
-    Project.
+    the Sacramento River Watershed as required by Condition of Approval
+    7.5.2 of Incidental Take Permit No. 2081-2019-006-00 (ITP) issued by
+    CDFW to California Department of Water Resources (DWR) for the
+    long-term operation of the State Water Project. Salmonid data
+    collected from the Butte Creek RST, among other datasets, is also
+    used by the Salmon Monitoring Team (SaMT) to understand the movement
+    of juvenile salmon in the Sacramento River Watershed to estimate the
+    number of winter-run and spring-run Chinook salmon that have entered
+    the Sacramento-San Joaquin Delta (Delta). SaMT is a real-time
+    operations monitoring team required by Condition of Approval 8.1.2
+    of the ITP which meets weekly from October through June, to provide
+    advice for real-time management of SWP operations to DWR, CDFW, and
+    the Water Operation Management Team (WOMT) to minimize take of
+    winter-run and spring-run Chinook salmon in the Delta.
   </para>
     </abstract>
     <keywordSet>
@@ -111,14 +126,14 @@
             <title>Current trap location</title>
             <para>
       The current trap location is at the Parrott-Phelan Diversion Dam
-      (Butte Creek near Chico).
+      on Butte Creek near Chico, California.
     </para>
           </section>
           <section>
             <title>Monitoring schedule</title>
             <para>
-      October-June Continuously trapping except under high flows and
-      unsafe working conditions, and traps were serviced daily within a
+      Continuously trapping October through June except under high flows
+      and unsafe working conditions. Traps were serviced daily within a
       24-hour period, more if needed due to high debris amounts or fish
       catch.
     </para>
@@ -127,15 +142,14 @@
             <title>Daily environmental data</title>
             <para>
       Daily environmental data collected were water temperature
-      (Celsius) and flow (Cubic Feet per Second).
+      (Celsius) and flow (cubic feet per second).
     </para>
           </section>
           <section>
             <title>Fish measurements</title>
             <para>
-      Fork length measurements to nearest mm taken for Chinook (50
-      randomly selected), Steelhead (first 10), and non-salmonids (first
-      10; total length).
+      Fork length measurements are taken to the nearest mm for 50
+      randomly selected Chinook salmon and the first 10 Steelhead.
     </para>
           </section>
           <section>
@@ -150,19 +164,19 @@
             <title>Trap efficiency trials</title>
             <para>
       Natural origin Chinook captured in RST and DST are the source of
-      released fish. Trap efficiency trials were conducted once weekly
-      December-May across variable flow and environmental conditions as
-      catch totals allow. A minimum of 3 consecutive days of fishing
-      after the release date is required for a release to be included in
-      analysis. Mortality between the release point and the trap is
-      assumed to be negligible. Release site approximately 1 mile
-      upstream of trapping site.
+      released fish. Trap efficiency trials were conducted once per week
+      from December to May across variable flow and environmental
+      conditions as catch totals allow. A minimum of three consecutive
+      days of fishing after the release date is required for a release
+      to be included in analysis. Mortality between the release point
+      and the trap is assumed to be negligible. Release site is located
+      approximately 1 mile upstream of the trapping site.
     </para>
           </section>
           <section>
             <title>Trap efficiency mark</title>
             <para>
-      Fish are marked with Bismarck brown Y (BBY) whole body stain.
+      Fish are marked with Bismarck Brown Y (BBY) whole body stain.
     </para>
           </section>
         </description>
