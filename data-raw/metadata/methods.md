@@ -1,4 +1,5 @@
-## Trap equipment
+## Trap equipment 
+
 The traps used were an 8-foot Rotary Screw Trap (RST) and a Diversion Screen Trap (DST).
 
 ## Current trap location
