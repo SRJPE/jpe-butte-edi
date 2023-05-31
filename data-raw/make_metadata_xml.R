@@ -16,11 +16,11 @@ datatable_metadata <-
                                           "Recaptured catch",
                                           "Release trial",
                                           "Daily trap operations"),
-                datatable_url = paste0("https://raw.githubusercontent.com/FlowWest/jpe-butte-edi/main/data/",
-                                       c("catch.csv",
-                                         "recapture.csv",
-                                         "release.csv",
-                                         "trap.csv")))
+                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/",
+                                       c("butte_catch_edi.csv",
+                                         "butte_recapture_edi.csv",
+                                         "butte_release_edi.csv",
+                                         "butte_trap_edi.csv")))
 # save cleaned data to `data/`
 excel_path <- "data-raw/metadata/butte_metadata.xlsx"
 sheets <- readxl::excel_sheets(excel_path)
