@@ -1,6 +1,14 @@
 library(tidyverse)
 library(readxl)
+library(googleCloudStorageR)
 
+
+# set up for google cloud -------------------------------------------------
+gcs_auth(json_file = Sys.getenv("GCS_AUTH_FILE"))
+gcs_global_bucket(bucket = Sys.getenv("GCS_DEFAULT_BUCKET"))
+
+
+# CAMP database table - 2015-2023
 catch <- read_xlsx(here::here("data-raw", "butte_catch_edi.xlsx"),
                    sheet = "Catch_Raw_EDI",
                    col_types = c("numeric", "numeric", "numeric", "text", "numeric",
@@ -10,10 +18,46 @@ catch <- read_xlsx(here::here("data-raw", "butte_catch_edi.xlsx"),
   mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
                                 TRUE ~ subSiteName),
          siteName = case_when(siteName == "Okie RST" ~ "Parrot-Phelan RST",
-                              TRUE ~ siteName)) |> glimpse()
-write_csv(catch, here::here("data","butte_catch_edi.csv"))
+                              TRUE ~ siteName),
+         commonName = tolower(commonName),
+         atCaptureRun = tolower(atCaptureRun),
+         lifeStage = tolower(lifeStage),
+         siteName = tolower(siteName),
+         subSiteName = tolower(subSiteName)) |> glimpse()
+
+# historical table
+gcs_get_object(object_name = "standard-format-data/standard_rst_catch.csv",
+               bucket = gcs_get_global_bucket(),
+               saveToDisk = here::here("data-raw", "standard_catch.csv"),
+               overwrite = TRUE)
+# filter standard catch to exclude years already covered by CAMP table and to Butte Creek
+# standardize variable names (siteName and subSiteName differ between tables)
+# and remove columns not included in original
+butte_historical_catch <- read_csv("data-raw/standard_catch.csv") |>
+  filter(stream == "butte creek",
+         date < min(catch$visitTime, na.rm = T)) |>
+  rename(visitTime = date,
+         atCaptureRun = run,
+         forkLength = fork_length,
+         lifeStage = lifestage,
+         siteName = site,
+         releaseID = release_id,
+         n = count,
+         commonName = species,
+         subSiteName = subsite) |>
+  select(-c(dead, interpolated, stream, site_group, weight,
+            is_yearling, run_method, adipose_clipped)) |>
+  mutate(releaseID = as.numeric(releaseID)) |>
+  glimpse()
+
+# combine
+final_catch <- bind_rows(catch, butte_historical_catch) |>
+  glimpse()
 
 
+write_csv(final_catch, here::here("data","butte_catch_edi.csv"))
+
+# CAMP database table - 2015-2023
 trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"),
                   sheet = "Trap_Visit_EDI") |>
   mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
@@ -21,6 +65,15 @@ trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"),
          siteName = case_when(siteName == "Okie RST" ~ "Parrot-Phelan RST",
                               TRUE ~ siteName),
          dissolvedOxygen = as.numeric(dissolvedOxygen)) |> glimpse()
+
+# historical table
+gcs_get_object(object_name = "standard-format-data/standard_rst_trap.csv",
+               bucket = gcs_get_global_bucket(),
+               saveToDisk = here::here("data-raw", "standard_trap.csv"),
+               overwrite = TRUE)
+standard_trap <- read_csv("data-raw/standard_trap.csv")
+
+# combine
 write_csv(trap, here::here("data", "butte_trap_edi.csv"))
 
 # forkLength and totalLength are NA bc they haven't been measuring recaptured fish
