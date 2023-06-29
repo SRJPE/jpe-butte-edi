@@ -28,8 +28,8 @@ write_csv(trap, here::here("data", "butte_trap_edi.csv"))
 recapture <- read_xlsx(here::here("data-raw", "butte_recapture_edi.xlsx"),
                        sheet = "Recapture_EDI",
                        col_types = c("numeric", "numeric", "numeric", "text", "numeric",
-                                     "text", "text", "text", "text", "numeric",
-                                     "numeric", "numeric", "numeric", "numeric", "date",
+                                     "text", "text", "text", "text", "text", "numeric",
+                                     "numeric", "numeric", "numeric", "date",
                                      "text", "text", "text", "text", "text",
                                      "text", "text")) |>
   select(-actualCountID) |> glimpse()
