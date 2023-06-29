@@ -221,7 +221,7 @@
         <attribute>
           <attributeName>ProjectDescriptionID</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 11</attributeDefinition>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All CAMP data associated with this package will have a ProjectDescriptionID = 11</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
@@ -266,26 +266,26 @@
         <attribute>
           <attributeName>commonName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Hardhead", &#13;
-"Riffle sculpin", "Sacramento pikeminnow", "Sacramento sucker", &#13;
-"California roach", "Pacific lamprey", "Tule perch", "Green sunfish", &#13;
-"Unknown lamprey (Entosphenus or Lampetra)", "Brown trout", "Redear sunfish", &#13;
-"Bluegill", "Brown bullhead", "Other", "Unknown minnow", "Largemouth bass", &#13;
-"River lamprey", "Unknown crappie (Pomoxis)", "Smallmouth bass", &#13;
-"Pacific lamprey (no longer valid)", "Western brook lamprey", &#13;
-"Unknown Centrarchid")</attributeDefinition>
+          <attributeDefinition>Common name of species. Levels = c("chinook salmon", "steelhead / rainbow trout", "hardhead", &#13;
+"riffle sculpin", "sacramento pikeminnow", "sacramento sucker", &#13;
+"california roach", "pacific lamprey", "tule perch", "green sunfish", &#13;
+"unknown lamprey (entosphenus or lampetra)", "brown trout", "redear sunfish", &#13;
+"bluegill", "brown bullhead", "other", "unknown minnow", "largemouth bass", &#13;
+"river lamprey", "unknown crappie (pomoxis)", "smallmouth bass", &#13;
+"pacific lamprey (no longer valid)", "western brook lamprey", &#13;
+"unknown centrarchid")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Hardhead", &#13;
-"Riffle sculpin", "Sacramento pikeminnow", "Sacramento sucker", &#13;
-"California roach", "Pacific lamprey", "Tule perch", "Green sunfish", &#13;
-"Unknown lamprey (Entosphenus or Lampetra)", "Brown trout", "Redear sunfish", &#13;
-"Bluegill", "Brown bullhead", "Other", "Unknown minnow", "Largemouth bass", &#13;
-"River lamprey", "Unknown crappie (Pomoxis)", "Smallmouth bass", &#13;
-"Pacific lamprey (no longer valid)", "Western brook lamprey", &#13;
-"Unknown Centrarchid")</definition>
+                  <definition>Common name of species. Levels = c("chinook salmon", "steelhead / rainbow trout", "hardhead", &#13;
+"riffle sculpin", "sacramento pikeminnow", "sacramento sucker", &#13;
+"california roach", "pacific lamprey", "tule perch", "green sunfish", &#13;
+"unknown lamprey (entosphenus or lampetra)", "brown trout", "redear sunfish", &#13;
+"bluegill", "brown bullhead", "other", "unknown minnow", "largemouth bass", &#13;
+"river lamprey", "unknown crappie (pomoxis)", "smallmouth bass", &#13;
+"pacific lamprey (no longer valid)", "western brook lamprey", &#13;
+"unknown centrarchid")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -308,12 +308,12 @@
         <attribute>
           <attributeName>atCaptureRun</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", "Spring", "Fall", "Winter").</attributeDefinition>
+          <attributeDefinition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("not recorded", "spring", "fall", "winter").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", "Spring", "Fall", "Winter").</definition>
+                  <definition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("not recorded", "spring", "fall", "winter").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -336,14 +336,16 @@
         <attribute>
           <attributeName>lifeStage</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", &#13;
-"Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</attributeDefinition>
+          <attributeDefinition>Life stage of the fish. Levels = c("not recorded", "smolt", "parr", "fry", "button-up fry", "silvery parr", &#13;
+"juvenile", "ammocoete", "yearling", "yolk sac fry (alevin)", &#13;
+"adult", "yolk sac fry", "unknown", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", &#13;
-"Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</definition>
+                  <definition>Life stage of the fish. Levels = c("not recorded", "smolt", "parr", "fry", "button-up fry", "silvery parr", &#13;
+"juvenile", "ammocoete", "yearling", "yolk sac fry (alevin)", &#13;
+"adult", "yolk sac fry", "unknown", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -362,7 +364,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">1000</maximum>
+                  <maximum exclusive="false">1786</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -400,7 +402,7 @@
                 <numberType>whole</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">88680</maximum>
+                  <maximum exclusive="false">220000</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -415,7 +417,7 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false">42311.4137</minimum>
+                  <minimum exclusive="false">35034</minimum>
                   <maximum exclusive="false">44929.4896</maximum>
                 </bounds>
               </dateTimeDomain>
@@ -443,16 +445,14 @@ NA)</definition>
         <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
-)&#13;
-)</attributeDefinition>
+          <attributeDefinition>Name of the sampling site. Levels = c("parrott-phelan canal trap box", "parrot-phelan rst", "coleman national fish hatchery", &#13;
+"okie dam", "adams dam")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
-)&#13;
-)</definition>
+                  <definition>Name of the sampling site. Levels = c("parrott-phelan canal trap box", "parrot-phelan rst", "coleman national fish hatchery", &#13;
+"okie dam", "adams dam")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -461,12 +461,14 @@ NA)</definition>
         <attribute>
           <attributeName>subSiteName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "PP RST", "n/a")</attributeDefinition>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "pp rst", "n/a", "okie dam 1", "okie dam fyke trap", &#13;
+NA, "adams dam", "okie dam 2")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the trap or trap location. Levels = c("canal trap box", "PP RST", "n/a")</definition>
+                  <definition>Name of the trap or trap location. Levels = c("canal trap box", "pp rst", "n/a", "okie dam 1", "okie dam fyke trap", &#13;
+NA, "adams dam", "okie dam 2")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -501,7 +503,7 @@ NA)</definition>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>42367</numberOfRecords>
+      <numberOfRecords>108459</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>butte_recapture_edi.csv</entityName>
