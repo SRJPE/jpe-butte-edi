@@ -71,7 +71,14 @@ gcs_get_object(object_name = "standard-format-data/standard_rst_trap.csv",
                bucket = gcs_get_global_bucket(),
                saveToDisk = here::here("data-raw", "standard_trap.csv"),
                overwrite = TRUE)
-standard_trap <- read_csv("data-raw/standard_trap.csv")
+butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
+  filter(stream == "butte creek") |>
+  glimpse()
+
+min(trap$visitTime, na.rm = T)
+min(butte_historical_trap$trap_visit_date, na.rm = T)
+# TODO standard_rst_trap.csv does not contain any records earlier than those
+# already in the CAMP table for butte
 
 # combine
 write_csv(trap, here::here("data", "butte_trap_edi.csv"))
