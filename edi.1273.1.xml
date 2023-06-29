@@ -5,6 +5,10 @@
       <principal>public</principal>
       <permission>read</permission>
     </allow>
+    <allow>
+      <principal>cvpia</principal>
+      <permission>write</permission>
+    </allow>
   </access>
   <dataset>
     <shortName>Butte Creek RST</shortName>
@@ -14,7 +18,7 @@
         <givenName>Grant</givenName>
         <surName>Henley</surName>
       </individualName>
-      <organizationName>California Department of Water Resources</organizationName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
       <electronicMailAddress>grantton.henley@wildlife.ca.gov</electronicMailAddress>
     </creator>
     <associatedParty>
@@ -22,11 +26,11 @@
         <givenName>Anna</givenName>
         <surName>Allison</surName>
       </individualName>
-      <organizationName>California Department of Water Resources</organizationName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
       <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-01-25</pubDate>
+    <pubDate>2023-06-29</pubDate>
     <abstract>
       <para>
     The California Department of Fish and Wildlife (CDFW) conducts
@@ -68,12 +72,12 @@
       <keyword>Central Valley</keyword>
     </keywordSet>
     <intellectualRights>
-      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.</para>
+      <para>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.</para>
     </intellectualRights>
     <licensed>
-      <licenseName>Creative Commons Zero v1.0 Universal</licenseName>
-      <url>https://spdx.org/licenses/CC0-1.0.html</url>
-      <identifier>CC0-1.0</identifier>
+      <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+      <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+      <identifier>CC-BY-4.0</identifier>
     </licensed>
     <coverage>
       <geographicCoverage>
@@ -105,7 +109,7 @@
         <givenName>Grant</givenName>
         <surName>Henley</surName>
       </individualName>
-      <organizationName>California Department of Water Resources</organizationName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
       <electronicMailAddress>grantton.henley@wildlife.ca.gov</electronicMailAddress>
     </contact>
     <methods>
@@ -185,7 +189,7 @@
           <givenName>Grant</givenName>
           <surName>Henley</surName>
         </individualName>
-        <organizationName>California Department of Water Resources</organizationName>
+        <organizationName>California Department of Fish and Wildlife</organizationName>
         <electronicMailAddress>grantton.henley@wildlife.ca.gov</electronicMailAddress>
         <role>Project Lead</role>
       </personnel>
@@ -209,7 +213,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-butte-edi/main/data/catch.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/butte_catch_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -262,12 +266,26 @@
         <attribute>
           <attributeName>commonName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Common name of species</attributeDefinition>
+          <attributeDefinition>Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Hardhead", &#13;
+"Riffle sculpin", "Sacramento pikeminnow", "Sacramento sucker", &#13;
+"California roach", "Pacific lamprey", "Tule perch", "Green sunfish", &#13;
+"Unknown lamprey (Entosphenus or Lampetra)", "Brown trout", "Redear sunfish", &#13;
+"Bluegill", "Brown bullhead", "Other", "Unknown minnow", "Largemouth bass", &#13;
+"River lamprey", "Unknown crappie (Pomoxis)", "Smallmouth bass", &#13;
+"Pacific lamprey (no longer valid)", "Western brook lamprey", &#13;
+"Unknown Centrarchid")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Common name of species</definition>
+                  <definition>Common name of species. Levels = c("Chinook salmon", "Steelhead / rainbow trout", "Hardhead", &#13;
+"Riffle sculpin", "Sacramento pikeminnow", "Sacramento sucker", &#13;
+"California roach", "Pacific lamprey", "Tule perch", "Green sunfish", &#13;
+"Unknown lamprey (Entosphenus or Lampetra)", "Brown trout", "Redear sunfish", &#13;
+"Bluegill", "Brown bullhead", "Other", "Unknown minnow", "Largemouth bass", &#13;
+"River lamprey", "Unknown crappie (Pomoxis)", "Smallmouth bass", &#13;
+"Pacific lamprey (no longer valid)", "Western brook lamprey", &#13;
+"Unknown Centrarchid")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -290,12 +308,12 @@
         <attribute>
           <attributeName>atCaptureRun</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis.</attributeDefinition>
+          <attributeDefinition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", "Spring", "Fall", "Winter").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis.</definition>
+                  <definition>Run designation as determined in the field or as assigned at a later date. This is the field used in analysis. Levels = c("Not recorded", "Spring", "Fall", "Winter").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -318,12 +336,14 @@
         <attribute>
           <attributeName>lifeStage</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", "Adult", "Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</attributeDefinition>
+          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", &#13;
+"Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", "Adult", "Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</definition>
+                  <definition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", &#13;
+"Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -405,12 +425,16 @@
         <attribute>
           <attributeName>visitType</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", "Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap")</attributeDefinition>
+          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", &#13;
+"Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap", &#13;
+NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", "Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap")</definition>
+                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", &#13;
+"Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap", &#13;
+NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -420,12 +444,14 @@
           <attributeName>siteName</attributeName>
           <attributeLabel>catch</attributeLabel>
           <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)&#13;
 )</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)&#13;
 )</definition>
                 </textDomain>
               </nonNumericDomain>
@@ -449,12 +475,12 @@
         <attribute>
           <attributeName>finalRun</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Run designation revised after field visit.</attributeDefinition>
+          <attributeDefinition>Run designation revised after field visit. Levels = c(NA, "Not recorded", "Fall", "Spring", "Winter").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run designation revised after field visit.</definition>
+                  <definition>Run designation revised after field visit. Levels = c(NA, "Not recorded", "Fall", "Spring", "Winter").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -496,7 +522,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-butte-edi/main/data/recapture.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/butte_recapture_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -549,12 +575,12 @@
         <attribute>
           <attributeName>commonName</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>Common name of species</attributeDefinition>
+          <attributeDefinition>Common name of species. Levels = c("Chinook salmon")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Common name of species</definition>
+                  <definition>Common name of species. Levels = c("Chinook salmon")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -591,12 +617,12 @@
         <attribute>
           <attributeName>finalRun</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>Run revised after field visit. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</attributeDefinition>
+          <attributeDefinition>Run revised after field visit.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run revised after field visit. Levels = c("Spring", "Not recorded", "Winter", "Late fall", "Fall")</definition>
+                  <definition>Run revised after field visit.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -619,12 +645,12 @@
         <attribute>
           <attributeName>lifeStage</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", "Adult", "Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</attributeDefinition>
+          <attributeDefinition>Life stage of the fish. Levels = c("Not recorded", "Juvenile", "Fry")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Life stage of the fish. Levels = c("Not recorded", "Smolt", "Parr", "Fry", "Button-up fry", "Silvery parr", "Adult", "Juvenile", "Ammocoete", "Yearling", "Yolk sac fry (alevin)")</definition>
+                  <definition>Life stage of the fish. Levels = c("Not recorded", "Juvenile", "Fry")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -734,12 +760,12 @@
         <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrott-Phelan RST")</attributeDefinition>
+          <attributeDefinition>Name of the sampling site. Levels = c("Parrot-Phelan RST")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Okie RST", "Parrott-Phelan RST")</definition>
+                  <definition>Name of the sampling site. Levels = c("Parrot-Phelan RST")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -748,12 +774,12 @@
         <attribute>
           <attributeName>subSiteName</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "Okie RST", "PP RST")</attributeDefinition>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("PP RST")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the trap or trap location. Levels = c("canal trap box", "Okie RST", "PP RST")</definition>
+                  <definition>Name of the trap or trap location. Levels = c("PP RST")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -762,12 +788,12 @@
         <attribute>
           <attributeName>markType</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>type of mark on fish</attributeDefinition>
+          <attributeDefinition>Type of mark on fish. Levels = c("Pigment / dye")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>type of mark on fish</definition>
+                  <definition>Type of mark on fish. Levels = c("Pigment / dye")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -776,12 +802,12 @@
         <attribute>
           <attributeName>markColor</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>color of mark on fish</attributeDefinition>
+          <attributeDefinition>Color of mark on fish. Levels = c("Brown")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>color of mark on fish</definition>
+                  <definition>Color of mark on fish. Levels = c("Brown")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -790,12 +816,12 @@
         <attribute>
           <attributeName>markPosition</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>position of mark on body of fish</attributeDefinition>
+          <attributeDefinition>Position of mark on body of fish. Levels = c("Brown")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>position of mark on body of fish</definition>
+                  <definition>Position of mark on body of fish. Levels = c("Brown")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -804,12 +830,12 @@
         <attribute>
           <attributeName>markCode</attributeName>
           <attributeLabel>recapture</attributeLabel>
-          <attributeDefinition>code identifying the type of mark</attributeDefinition>
+          <attributeDefinition>Code identifying the type of mark on fish.</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>code identifying the type of mark</definition>
+                  <definition>Code identifying the type of mark on fish.</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -837,7 +863,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-butte-edi/main/data/release.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/butte_release_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -845,7 +871,7 @@
         <attribute>
           <attributeName>projectDescriptionID</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. For Butte Creek data projectDescriptionID = 11.</attributeDefinition>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table. All data associated with this package will have a ProjectDescriptionID = 11.</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
@@ -876,12 +902,12 @@
         <attribute>
           <attributeName>commonName</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Common name of marked species</attributeDefinition>
+          <attributeDefinition>Common name of marked species. Levels = c("Chinook salmon", "Not applicable (n/a)").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Common name of marked species</definition>
+                  <definition>Common name of marked species. Levels = c("Chinook salmon", "Not applicable (n/a)").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -890,12 +916,12 @@
         <attribute>
           <attributeName>markedRun</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Run of fish marked. Levels = c("Not recorded", "Not applicable (n/a)", "Spring")</attributeDefinition>
+          <attributeDefinition>Run of fish marked. Levels =c("Spring", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Run of fish marked. Levels = c("Not recorded", "Not applicable (n/a)", "Spring")</definition>
+                  <definition>Run of fish marked. Levels =c("Spring", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -904,12 +930,12 @@
         <attribute>
           <attributeName>markedLifeStage</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Lifestage of fish marked. Levels = c("Not recorded", "Not applicable (n/a)", "Juvenile")</attributeDefinition>
+          <attributeDefinition>Lifestage of fish marked. Levels = c("Juvenile", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Lifestage of fish marked. Levels = c("Not recorded", "Not applicable (n/a)", "Juvenile")</definition>
+                  <definition>Lifestage of fish marked. Levels = c("Juvenile", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -918,12 +944,12 @@
         <attribute>
           <attributeName>markedFishOrigin</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Origin or production type of fish marked. Levels = c("Unknown", "Not applicable (n/a)", "Natural")</attributeDefinition>
+          <attributeDefinition>Origin or production type of fish marked. Levels = c("Natural", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Origin or production type of fish marked. Levels = c("Unknown", "Not applicable (n/a)", "Natural")</definition>
+                  <definition>Origin or production type of fish marked. Levels = c("Natural", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -932,12 +958,12 @@
         <attribute>
           <attributeName>sourceOfFishSite</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Site where fish used for release were from</attributeDefinition>
+          <attributeDefinition>Site where fish used for release were from. Levels = c("Parrott-Phelan canal trap box", NA, "Parrot-Phelan RST").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Site where fish used for release were from</definition>
+                  <definition>Site where fish used for release were from. Levels = c("Parrott-Phelan canal trap box", NA, "Parrot-Phelan RST").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -946,12 +972,12 @@
         <attribute>
           <attributeName>releaseSite</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Site where fish were released</attributeDefinition>
+          <attributeDefinition>Site where fish were released. Levels = c("Not applicable", "Parrott-Phelan e-test release site").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Site where fish were released</definition>
+                  <definition>Site where fish were released. Levels = c("Not applicable", "Parrott-Phelan e-test release site").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -983,7 +1009,7 @@
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false">0</minimum>
+                  <minimum exclusive="false">100</minimum>
                   <maximum exclusive="false">500</maximum>
                 </bounds>
               </numericDomain>
@@ -999,7 +1025,7 @@
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false">2</minimum>
+                  <minimum exclusive="false">44202.5209</minimum>
                   <maximum exclusive="false">44628.5558</maximum>
                 </bounds>
               </dateTimeDomain>
@@ -1018,7 +1044,7 @@
               <numericDomain>
                 <numberType>whole</numberType>
                 <bounds>
-                  <minimum exclusive="false">0</minimum>
+                  <minimum exclusive="false">6</minimum>
                   <maximum exclusive="false">7</maximum>
                 </bounds>
               </numericDomain>
@@ -1028,12 +1054,12 @@
         <attribute>
           <attributeName>appliedMarkType</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Mark type that was applied to the release group. Levels = "Pigment / dye"</attributeDefinition>
+          <attributeDefinition>Mark type that was applied to the release group. Levels = c("Pigment / dye", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Mark type that was applied to the release group. Levels = "Pigment / dye"</definition>
+                  <definition>Mark type that was applied to the release group. Levels = c("Pigment / dye", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1042,12 +1068,12 @@
         <attribute>
           <attributeName>appliedMarkColor</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Color of mark that was applied to the release group. Levels = "Brown"</attributeDefinition>
+          <attributeDefinition>Color of mark that was applied to the release group. Levels = c("Brown", NA).</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Color of mark that was applied to the release group. Levels = "Brown"</definition>
+                  <definition>Color of mark that was applied to the release group. Levels = c("Brown", NA).</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1056,12 +1082,12 @@
         <attribute>
           <attributeName>appliedMarkPosition</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Position of the mark that was applied to the mark group. Levels = "Whole body"</attributeDefinition>
+          <attributeDefinition>Position of the mark that was applied to the mark group. Levels = c("Whole body", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Position of the mark that was applied to the mark group. Levels = "Whole body"</definition>
+                  <definition>Position of the mark that was applied to the mark group. Levels = c("Whole body", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1084,12 +1110,12 @@
         <attribute>
           <attributeName>includeAnalysis</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Whether or not to include data in analysis</attributeDefinition>
+          <attributeDefinition>Whether or not to include data in analysis. Levels = c("Yes", "No", NA).</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Whether or not to include data in analysis</definition>
+                  <definition>Whether or not to include data in analysis. Levels = c("Yes", "No", NA).</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1117,7 +1143,7 @@
         </dataFormat>
         <distribution>
           <online>
-            <url function="download">https://raw.githubusercontent.com/FlowWest/jpe-butte-edi/main/data/trap.csv</url>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/butte_trap_edi.csv</url>
           </online>
         </distribution>
       </physical>
@@ -1125,7 +1151,7 @@
         <attribute>
           <attributeName>projectDescriptionID</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Foreign key to the CAMP ProjectDescription table.  For Butte Creek data projectDescriptionID = 11.</attributeDefinition>
+          <attributeDefinition>Foreign key to the CAMP ProjectDescription table.  All data associated with this package will have a ProjectDescriptionID = 11.</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
@@ -1157,12 +1183,14 @@
           <attributeName>siteName</attributeName>
           <attributeLabel>trap</attributeLabel>
           <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)&#13;
 )</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
                   <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
+)&#13;
 )</definition>
                 </textDomain>
               </nonNumericDomain>
@@ -1202,12 +1230,16 @@
         <attribute>
           <attributeName>visitType</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", "Unplanned restart",  "Not applicable (n/a)", "Service/adjust/clean trap")</attributeDefinition>
+          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", &#13;
+"Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap", &#13;
+NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", "Unplanned restart",  "Not applicable (n/a)", "Service/adjust/clean trap")</definition>
+                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", &#13;
+"Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap", &#13;
+NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1216,12 +1248,14 @@
         <attribute>
           <attributeName>fishProcessed</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", "No catch data; fish released")</attributeDefinition>
+          <attributeDefinition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
+"No catch data; fish released", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", "No catch data; fish released")</definition>
+                  <definition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
+"No catch data; fish released", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1230,12 +1264,16 @@
         <attribute>
           <attributeName>trapFunctioning</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", "Trap not in service", "Trap stopped functioning", "Not recorded")</attributeDefinition>
+          <attributeDefinition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", &#13;
+"Trap not in service", "Trap stopped functioning", "Not recorded", &#13;
+NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Code for description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", "Trap not in service", "Trap stopped functioning", "Not recorded")</definition>
+                  <definition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", &#13;
+"Trap not in service", "Trap stopped functioning", "Not recorded", &#13;
+NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1301,7 +1339,7 @@
         <attribute>
           <attributeName>rpmRevolutionsAtEnd</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Number of revolutions per minute before cleaning the trap</attributeDefinition>
+          <attributeDefinition>Number of revolutions per minute after cleaning the trap</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -1320,12 +1358,12 @@
         <attribute>
           <attributeName>includeCatch</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Code for whether this record is considered of high enough quality to include in analysis</attributeDefinition>
+          <attributeDefinition>Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Code for whether this record is considered of high enough quality to include in analysis</definition>
+                  <definition>Code for whether this record is considered of high enough quality to include in analysis. Levels = c("Yes", "No")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1334,7 +1372,7 @@
         <attribute>
           <attributeName>discharge</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Dischage measured at trap</attributeDefinition>
+          <attributeDefinition>Discharge measured at trap</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
@@ -1410,7 +1448,7 @@
         <attribute>
           <attributeName>dissolvedOxygen</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Level of dissolved oxygen measured</attributeDefinition>
+          <attributeDefinition>Level of dissolved oxygen measured at trap</attributeDefinition>
           <measurementScale>
             <ratio>
               <unit>
