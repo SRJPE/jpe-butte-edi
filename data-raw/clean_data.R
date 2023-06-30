@@ -17,8 +17,8 @@ catch <- read_xlsx(here::here("data-raw", "butte_catch_edi.xlsx"),
                                 "text", "text")) |>
   mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
                                 TRUE ~ subSiteName),
-         siteName = case_when(siteName == "Okie RST" ~ "Parrot-Phelan RST",
-                              TRUE ~ siteName),
+         siteName = ifelse(siteName %in% c("Okie RST", "Parrot-Phelan RST", "Parrott-Phelan canal trap box"),
+                           "Parrot-Phelan", siteName),
          commonName = tolower(commonName),
          atCaptureRun = tolower(atCaptureRun),
          lifeStage = tolower(lifeStage),
@@ -47,7 +47,12 @@ butte_historical_catch <- read_csv("data-raw/standard_catch.csv") |>
          subSiteName = subsite) |>
   select(-c(dead, interpolated, stream, site_group, weight,
             is_yearling, run_method, adipose_clipped)) |>
-  mutate(releaseID = as.numeric(releaseID)) |>
+  mutate(releaseID = as.numeric(releaseID),
+         siteName = ifelse(siteName == "okie dam", "parrot-phelan", siteName),
+         subSiteName = case_when(subSiteName == "okie dam 1" ~ "pp rst",
+                                 subSiteName == "okie dam 2" ~ "pp rst 2",
+                                 subSiteName == "okie dam fyke trap" ~ "canal trap box",
+                                 TRUE ~ subSiteName)) |>
   glimpse()
 
 # combine
@@ -62,8 +67,8 @@ trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"),
                   sheet = "Trap_Visit_EDI") |>
   mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
                                  TRUE ~ subSiteName),
-         siteName = case_when(siteName == "Okie RST" ~ "Parrot-Phelan RST",
-                              TRUE ~ siteName),
+         siteName = ifelse(siteName %in% c("Okie RST", "Parrot-Phelan RST", "Parrott-Phelan canal trap box"),
+                           "Parrot-Phelan", siteName),
          dissolvedOxygen = as.numeric(dissolvedOxygen)) |> glimpse()
 
 # historical table
