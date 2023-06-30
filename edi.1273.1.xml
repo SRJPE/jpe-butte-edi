@@ -30,7 +30,7 @@
       <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-06-29</pubDate>
+    <pubDate>2023-06-30</pubDate>
     <abstract>
       <para>
     The California Department of Fish and Wildlife (CDFW) conducts
@@ -92,10 +92,10 @@
       <temporalCoverage>
         <rangeOfDates>
           <beginDate>
-            <calendarDate>2015-11-03</calendarDate>
+            <calendarDate>1995-12-01</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2022-06-30</calendarDate>
+            <calendarDate>2023-01-03</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -445,14 +445,12 @@ NA)</definition>
         <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Name of the sampling site. Levels = c("parrott-phelan canal trap box", "parrot-phelan rst", "coleman national fish hatchery", &#13;
-"okie dam", "adams dam")</attributeDefinition>
+          <attributeDefinition>Name of the sampling site. Levels = c("parrot-phelan", "coleman national fish hatchery", "adams dam")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the sampling site. Levels = c("parrott-phelan canal trap box", "parrot-phelan rst", "coleman national fish hatchery", &#13;
-"okie dam", "adams dam")</definition>
+                  <definition>Name of the sampling site. Levels = c("parrot-phelan", "coleman national fish hatchery", "adams dam")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -461,14 +459,12 @@ NA)</definition>
         <attribute>
           <attributeName>subSiteName</attributeName>
           <attributeLabel>catch</attributeLabel>
-          <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "pp rst", "n/a", "okie dam 1", "okie dam fyke trap", &#13;
-NA, "adams dam", "okie dam 2")</attributeDefinition>
+          <attributeDefinition>Name of the trap or trap location. Levels = c("canal trap box", "pp rst", "n/a", NA, "adams dam", "pp rst 2")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the trap or trap location. Levels = c("canal trap box", "pp rst", "n/a", "okie dam 1", "okie dam fyke trap", &#13;
-NA, "adams dam", "okie dam 2")</definition>
+                  <definition>Name of the trap or trap location. Levels = c("canal trap box", "pp rst", "n/a", NA, "adams dam", "pp rst 2")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -503,7 +499,7 @@ NA, "adams dam", "okie dam 2")</definition>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>108459</numberOfRecords>
+      <numberOfRecords>94249</numberOfRecords>
     </dataTable>
     <dataTable>
       <entityName>butte_recapture_edi.csv</entityName>
@@ -1184,16 +1180,12 @@ NA, "adams dam", "okie dam 2")</definition>
         <attribute>
           <attributeName>siteName</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
-)&#13;
-)</attributeDefinition>
+          <attributeDefinition>Name of the sampling site. Levels = c("parrot-phelan", "coleman national fish hatchery", "adams dam")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Name of the sampling site. Levels = c("Parrott-Phelan canal trap box", "Parrot-Phelan RST", "Coleman National Fish Hatchery"&#13;
-)&#13;
-)</definition>
+                  <definition>Name of the sampling site. Levels = c("parrot-phelan", "coleman national fish hatchery", "adams dam")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1202,12 +1194,12 @@ NA, "adams dam", "okie dam 2")</definition>
         <attribute>
           <attributeName>subSiteName</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Position of trap within the site. Levels =c("canal trap box", "PP RST", "n/a")</attributeDefinition>
+          <attributeDefinition>Position of trap within the site. Levels = c("canal trap box", "pp rst", "n/a", NA, "adams dam", "pp rst 2")</attributeDefinition>
           <measurementScale>
             <ordinal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Position of trap within the site. Levels =c("canal trap box", "PP RST", "n/a")</definition>
+                  <definition>Position of trap within the site. Levels = c("canal trap box", "pp rst", "n/a", NA, "adams dam", "pp rst 2")</definition>
                 </textDomain>
               </nonNumericDomain>
             </ordinal>
@@ -1222,8 +1214,8 @@ NA, "adams dam", "okie dam 2")</definition>
               <formatString>YYYY-MM-DD hh:mm:ss</formatString>
               <dateTimeDomain>
                 <bounds>
-                  <minimum exclusive="false">42311.4137</minimum>
-                  <maximum exclusive="false">44742.417</maximum>
+                  <minimum exclusive="false">35034.375</minimum>
+                  <maximum exclusive="false">44929.4896</maximum>
                 </bounds>
               </dateTimeDomain>
             </dateTime>
@@ -1232,16 +1224,12 @@ NA, "adams dam", "okie dam 2")</definition>
         <attribute>
           <attributeName>visitType</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", &#13;
-"Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap", &#13;
-NA)</attributeDefinition>
+          <attributeDefinition>Work that was done during visit to trap. Levels = c("continue trapping", "start trap &amp; begin trapping", "end trapping", "unplanned restart", "not applicable (n/a)", "service/adjust/clean trap", NA, "start trapping", "not recorded")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Work that was done during visit to trap. Levels = c("Continue trapping", "Start trap &amp; begin trapping", "End trapping", &#13;
-"Unplanned restart", "Not applicable (n/a)", "Service/adjust/clean trap", &#13;
-NA)</definition>
+                  <definition>Work that was done during visit to trap. Levels = c("continue trapping", "start trap &amp; begin trapping", "end trapping", "unplanned restart", "not applicable (n/a)", "service/adjust/clean trap", NA, "start trapping", "not recorded")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1250,14 +1238,12 @@ NA)</definition>
         <attribute>
           <attributeName>fishProcessed</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
-"No catch data; fish released", NA)</attributeDefinition>
+          <attributeDefinition>Describing if fish processed during trap visit. Levels = c("processed fish", "n/a; not a sampling visit", "no fish were caught",  "no catch data; fish released", NA, "not recorded")</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Describing if fish processed during trap visit. Levels = c("Processed fish", "N/A; not a sampling visit", "No fish were caught", &#13;
-"No catch data; fish released", NA)</definition>
+                  <definition>Describing if fish processed during trap visit. Levels = c("processed fish", "n/a; not a sampling visit", "no fish were caught",  "no catch data; fish released", NA, "not recorded")</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1266,16 +1252,12 @@ NA)</definition>
         <attribute>
           <attributeName>trapFunctioning</attributeName>
           <attributeLabel>trap</attributeLabel>
-          <attributeDefinition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", &#13;
-"Trap not in service", "Trap stopped functioning", "Not recorded", &#13;
-NA)</attributeDefinition>
+          <attributeDefinition>Description of how well trap is functioning when visit to trap began. Levels = c("trap functioning normally", "trap functioning, but not normally", "trap not in service", "trap stopped functioning", "not recorded", NA)</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Description of how well trap is functioning when visit to trap began. Levels = c("Trap functioning normally", "Trap functioning, but not normally", &#13;
-"Trap not in service", "Trap stopped functioning", "Not recorded", &#13;
-NA)</definition>
+                  <definition>Description of how well trap is functioning when visit to trap began. Levels = c("trap functioning normally", "trap functioning, but not normally", "trap not in service", "trap stopped functioning", "not recorded", NA)</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -1332,7 +1314,7 @@ NA)</definition>
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">6</maximum>
+                  <maximum exclusive="false">3624</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1351,7 +1333,7 @@ NA)</definition>
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0</minimum>
-                  <maximum exclusive="false">6.5</maximum>
+                  <maximum exclusive="false">3624</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -1467,7 +1449,7 @@ NA)</definition>
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>2180</numberOfRecords>
+      <numberOfRecords>6327</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
