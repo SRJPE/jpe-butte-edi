@@ -33,6 +33,7 @@ gcs_get_object(object_name = "standard-format-data/standard_rst_catch.csv",
 # filter standard catch to exclude years already covered by CAMP table and to Butte Creek
 # standardize variable names (siteName and subSiteName differ between tables)
 # and remove columns not included in original
+# TODO we don't have data for 2009, 2010, 2011
 butte_historical_catch <- read_csv("data-raw/standard_catch.csv") |>
   filter(stream == "butte creek",
          date < min(catch$visitTime, na.rm = T)) |>
@@ -59,7 +60,6 @@ butte_historical_catch <- read_csv("data-raw/standard_catch.csv") |>
 final_catch <- bind_rows(catch, butte_historical_catch) |>
   glimpse()
 
-
 write_csv(final_catch, here::here("data","butte_catch_edi.csv"))
 
 # CAMP database table - 2015-2023
@@ -69,24 +69,53 @@ trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"),
                                  TRUE ~ subSiteName),
          siteName = ifelse(siteName %in% c("Okie RST", "Parrot-Phelan RST", "Parrott-Phelan canal trap box"),
                            "Parrot-Phelan", siteName),
-         dissolvedOxygen = as.numeric(dissolvedOxygen)) |> glimpse()
+         dissolvedOxygen = as.numeric(dissolvedOxygen),
+         siteName = tolower(siteName),
+         subSiteName = tolower(subSiteName),
+         visitType = tolower(visitType),
+         fishProcessed = tolower(fishProcessed),
+         trapFunctioning = tolower(trapFunctioning)) |> glimpse()
 
 # historical table
+
 gcs_get_object(object_name = "standard-format-data/standard_rst_trap.csv",
                bucket = gcs_get_global_bucket(),
                saveToDisk = here::here("data-raw", "standard_trap.csv"),
                overwrite = TRUE)
+# TODO missing 2009, 2010, 2011
 butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
-  filter(stream == "butte creek") |>
+  filter(stream == "butte creek",
+         trap_stop_date < min(trap$visitTime, na.rm = T)) |>
+  mutate(visitTime = as_datetime(paste0(trap_stop_date, " ", trap_stop_time)),
+         siteName = ifelse(site == "okie dam", "parrot-phelan", site),
+         subSiteName = case_when(subsite == "okie dam 1" ~ "pp rst",
+                                 subsite == "okie dam 2" ~ "pp rst 2",
+                                 subsite == "okie dam fyke trap" ~ "canal trap box",
+                                TRUE ~ subsite),
+         trapVisitID = as.numeric(trap_visit_id),
+         includeCatch = ifelse(include == TRUE, "Yes", "No")) |>
+  rename(visitType = visit_type,
+         fishProcessed = fish_processed,
+         trapFunctioning = trap_functioning,
+         counterAtStart = counter_start,
+         counterAtEnd = counter_end,
+         rpmRevolutionsAtStart = rpms_start,
+         rpmRevolutionsAtEnd = rpms_end) |>
+  select(-c(site, subsite, trap_stop_date, trap_visit_date,
+            trap_visit_time, trap_start_date, trap_start_time,
+            gear_type, in_thalweg, partial_sample,
+            is_half_cone_configuration, depth_adjust,
+            debris_volume, debris_level,
+            time, sample_period_revolutions,
+            comments, trap_visit_id, include, trap_stop_time,
+            stream)) |>
   glimpse()
 
-min(trap$visitTime, na.rm = T)
-min(butte_historical_trap$trap_visit_date, na.rm = T)
-# TODO standard_rst_trap.csv does not contain any records earlier than those
-# already in the CAMP table for butte
-
 # combine
-write_csv(trap, here::here("data", "butte_trap_edi.csv"))
+trap_final <- bind_rows(trap, butte_historical_trap) |>
+  glimpse()
+
+write_csv(trap_final, here::here("data", "butte_trap_edi.csv"))
 
 # forkLength and totalLength are NA bc they haven't been measuring recaptured fish
 # removed actualcountID
