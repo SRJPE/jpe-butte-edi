@@ -30,7 +30,7 @@
       <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-06-30</pubDate>
+    <pubDate>2023-07-31</pubDate>
     <abstract>
       <para>
     The California Department of Fish and Wildlife (CDFW) conducts
@@ -83,10 +83,10 @@
       <geographicCoverage>
         <geographicDescription>Butte Creek Rotary Screw Trap</geographicDescription>
         <boundingCoordinates>
-          <westBoundingCoordinate>-121.774</westBoundingCoordinate>
-          <eastBoundingCoordinate>-121.7504</eastBoundingCoordinate>
-          <northBoundingCoordinate>39.7095</northBoundingCoordinate>
-          <southBoundingCoordinate>39.6223</southBoundingCoordinate>
+          <westBoundingCoordinate>-121.7507</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.7507</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.7092</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7092</southBoundingCoordinate>
         </boundingCoordinates>
       </geographicCoverage>
       <temporalCoverage>
@@ -116,9 +116,9 @@
       <methodStep>
         <description>
           <section>
-            <title>Trap equipment</title>
+            <title>gtTrap equipment</title>
             <para>
-      The traps used were an 8-foot Rotary Screw Trap (RST) and a
+      The traps used are an 8-foot Rotary Screw Trap (RST) and a
       Diversion Screen Trap (DST).
     </para>
           </section>
@@ -133,7 +133,7 @@
             <title>Monitoring schedule</title>
             <para>
       Continuously trapping October through June except under high flows
-      and unsafe working conditions. Traps were serviced daily within a
+      and unsafe working conditions. Traps are serviced daily within a
       24-hour period, more if needed due to high debris amounts or fish
       catch.
     </para>
@@ -141,8 +141,8 @@
           <section>
             <title>Daily environmental data</title>
             <para>
-      Daily environmental data collected were water temperature
-      (Celsius) and flow (cubic feet per second).
+      Daily environmental data collected are water temperature (Celsius)
+      and flow (cubic feet per second).
     </para>
           </section>
           <section>
@@ -164,7 +164,7 @@
             <title>Trap efficiency trials</title>
             <para>
       Natural origin Chinook captured in RST and DST are the source of
-      released fish. Trap efficiency trials were conducted once per week
+      released fish. Trap efficiency trials are conducted once per week
       from December to May across variable flow and environmental
       conditions as catch totals allow. A minimum of three consecutive
       days of fishing after the release date is required for a release
