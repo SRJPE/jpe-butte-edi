@@ -83,10 +83,10 @@
       <geographicCoverage>
         <geographicDescription>Butte Creek Rotary Screw Trap</geographicDescription>
         <boundingCoordinates>
-          <westBoundingCoordinate>-121.7507</westBoundingCoordinate>
-          <eastBoundingCoordinate>-121.7507</eastBoundingCoordinate>
-          <northBoundingCoordinate>39.7092</northBoundingCoordinate>
-          <southBoundingCoordinate>39.7092</southBoundingCoordinate>
+          <westBoundingCoordinate>-121.7809</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.7141</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.7224</northBoundingCoordinate>
+          <southBoundingCoordinate>39.6973</southBoundingCoordinate>
         </boundingCoordinates>
       </geographicCoverage>
       <temporalCoverage>
