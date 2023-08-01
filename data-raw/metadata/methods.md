@@ -1,4 +1,4 @@
-## gtTrap equipment 
+## Trap equipment 
 
 The traps used are an 8-foot Rotary Screw Trap (RST) and a Diversion Screen Trap (DST).
 
