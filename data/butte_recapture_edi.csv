@@ -1,0 +1,16 @@
+ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,atCaptureRun,finalRun,fishOrigin,lifeStage,actualCount,forkLength,totalLength,n,visitTime,visitType,siteName,subSiteName,markType,markColor,markPosition,markCode
+11,22160,1299,Chinook salmon,263,Not recorded,NA,Natural,Not recorded,NA,NA,NA,1,2021-01-17T09:30:51Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,22974,1344,Chinook salmon,264,Not recorded,NA,Natural,Not recorded,NA,NA,NA,10,2021-02-11T09:00:47Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,22989,1345,Chinook salmon,264,Not recorded,NA,Natural,Juvenile,NA,NA,NA,8,2021-02-12T15:30:07Z,Unplanned restart,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,23474,1371,Chinook salmon,265,Not recorded,NA,Natural,Juvenile,NA,NA,NA,65,2021-02-25T09:30:32Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,23484,1372,Chinook salmon,265,Not recorded,NA,Natural,Not recorded,NA,NA,NA,24,2021-02-26T09:00:51Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,23804,1405,Chinook salmon,266,Spring,NA,Natural,Juvenile,NA,NA,NA,13,2021-03-11T09:40:22Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,23818,1406,Chinook salmon,266,Spring,NA,Natural,Not recorded,NA,NA,NA,6,2021-03-12T09:00:50Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,25130,1471,Chinook salmon,267,Not recorded,NA,Natural,Not recorded,NA,NA,NA,6,2021-04-09T11:30:28Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,25709,1486,Chinook salmon,268,Not recorded,NA,Natural,Not recorded,NA,NA,NA,109,2021-04-16T10:30:02Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,28425,1488,Chinook salmon,268,Spring,NA,Natural,Juvenile,NA,NA,NA,3,2021-04-17T11:11:50Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,28563,1281,Chinook salmon,261,Spring,NA,Natural,Fry,NA,NA,NA,14,2021-01-07T10:30:17Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,29767,1283,Chinook salmon,261,Not recorded,NA,Natural,Juvenile,NA,NA,NA,5,2021-01-08T09:30:11Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,29768,1285,Chinook salmon,261,Not recorded,NA,Natural,Juvenile,NA,NA,NA,3,2021-01-09T10:00:04Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,29770,1297,Chinook salmon,263,Not recorded,NA,Natural,Juvenile,NA,NA,NA,55,2021-01-15T14:00:01Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
+11,29771,1298,Chinook salmon,263,Not recorded,NA,Natural,Juvenile,NA,NA,NA,5,2021-01-16T09:00:04Z,Continue trapping,Parrot-Phelan RST,PP RST,Pigment / dye,Brown,Whole body,NA
