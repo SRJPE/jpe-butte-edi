@@ -3,7 +3,7 @@
 The traps used are an 8-foot Rotary Screw Trap (RST) and a Diversion Screen Trap (DST).
 
 ## Current trap location
-The current trap location is at the Parrott-Phelan Diversion Dam on Butte Creek near Chico, California.
+The current trap location is at the Parrot-Phelan Diversion Dam on Butte Creek near Chico, California.
 
 ## Monitoring schedule
 Continuously trapping October through June except under high flows and unsafe working conditions. Traps are serviced daily within a 24-hour period, more if needed due to high debris amounts or fish catch.
