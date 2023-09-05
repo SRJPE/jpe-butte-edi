@@ -30,12 +30,12 @@
       <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
       <role>principal investigator</role>
     </associatedParty>
-    <pubDate>2023-08-04</pubDate>
+    <pubDate>2023-09-05</pubDate>
     <abstract>
       <para>
     The California Department of Fish and Wildlife (CDFW) conducts
     juvenile salmonid emigration monitoring on Butte Creek at the
-    Parrott-Phelan Diversion Dam near Chico, California. Monitoring is
+    Parrot-Phelan Diversion Dam near Chico, California. Monitoring is
     conducted annually from October through June utilizing an 8-ft
     diameter rotary screw trap (RST) and a diversion screen trap (DST).
     Data from this monitoring is used to estimate juvenile spring-run
@@ -125,8 +125,8 @@
           <section>
             <title>Current trap location</title>
             <para>
-      The current trap location is at the Parrott-Phelan Diversion Dam
-      on Butte Creek near Chico, California.
+      The current trap location is at the Parrot-Phelan Diversion Dam on
+      Butte Creek near Chico, California.
     </para>
           </section>
           <section>
@@ -960,12 +960,12 @@ NA)</definition>
         <attribute>
           <attributeName>sourceOfFishSite</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Site where fish used for release were from. Levels = c("Parrott-Phelan canal trap box", NA, "Parrot-Phelan RST").</attributeDefinition>
+          <attributeDefinition>Site where fish used for release were from. Levels = c("Parrot-Phelan canal trap box", NA, "Parrot-Phelan RST").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Site where fish used for release were from. Levels = c("Parrott-Phelan canal trap box", NA, "Parrot-Phelan RST").</definition>
+                  <definition>Site where fish used for release were from. Levels = c("Parrot-Phelan canal trap box", NA, "Parrot-Phelan RST").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
@@ -974,12 +974,12 @@ NA)</definition>
         <attribute>
           <attributeName>releaseSite</attributeName>
           <attributeLabel>release</attributeLabel>
-          <attributeDefinition>Site where fish were released. Levels = c("Not applicable", "Parrott-Phelan e-test release site").</attributeDefinition>
+          <attributeDefinition>Site where fish were released. Levels = c("Not applicable", "Parrot-Phelan e-test release site").</attributeDefinition>
           <measurementScale>
             <nominal>
               <nonNumericDomain>
                 <textDomain>
-                  <definition>Site where fish were released. Levels = c("Not applicable", "Parrott-Phelan e-test release site").</definition>
+                  <definition>Site where fish were released. Levels = c("Not applicable", "Parrot-Phelan e-test release site").</definition>
                 </textDomain>
               </nonNumericDomain>
             </nominal>
