@@ -139,7 +139,10 @@ release <- read_xlsx(here::here("data-raw", "butte_release_edi.xlsx"),
                      col_types = c("numeric", "numeric", "text", "text", "text",
                                    "text", "text", "text", "text", "numeric",
                                    "date", "numeric", "text", "text", "text",
-                                   "text", "text")) |> glimpse()
+                                   "text", "text")) |>
+  mutate(sourceOfFishSite = ifelse(sourceOfFishSite == "Parrott-Phelan canal trap box", "Parrot-Phelan canal trap box", sourceOfFishSite),
+         releaseSite = ifelse(releaseSite == "Parrott-Phelan e-test release site", "Parrot-Phelan e-test release site", releaseSite)) |>
+  glimpse()
 write_csv(release, here::here("data","butte_release_edi.csv"))
 
 # TODO write code that checks the data with lookups
