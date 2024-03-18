@@ -3,6 +3,9 @@ library(tidyverse)
 library(readxl)
 library(EML)
 
+secret_edi_username = Sys.getenv("EDI_USERNAME")
+secret_edi_password = Sys.getenv("EDI_PASSWORD")
+
 datatable_metadata <-
   dplyr::tibble(filepath = c("data/butte_catch_edi.csv",
                              "data/butte_recapture_edi.csv",
@@ -16,11 +19,11 @@ datatable_metadata <-
                                           "Recaptured catch",
                                           "Release trial",
                                           "Daily trap operations"),
-                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/",
-                                       c("butte_catch_edi.csv",
-                                         "butte_recapture_edi.csv",
-                                         "butte_release_edi.csv",
-                                         "butte_trap_edi.csv")))
+                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/test1/data/",
+                                       c("butte_catch.csv",
+                                         "butte_recapture.csv",
+                                         "butte_release.csv",
+                                         "butte_trap.csv")))
 # save cleaned data to `data/`
 excel_path <- "data-raw/metadata/butte_metadata.xlsx"
 sheets <- readxl::excel_sheets(excel_path)
@@ -30,9 +33,34 @@ names(metadata) <- sheets
 abstract_docx <- "data-raw/metadata/abstract.docx"
 #methods_docx <- "data-raw/metadata/methods.docx"
 methods_docx <- "data-raw/metadata/methods.md" # use md for bulleted formatting. I don't believe lists are allowed in methods (https://edirepository.org/news/news-20210430.00)
+methods_docx <- "data-raw/metadata/methods.docx"
+catch_df <- readr::read_csv("data/butte_catch.csv")
+catch_coverage <- tail(catch_df$visitTime, 1)
+metadata$coverage$end_date <- lubridate::floor_date(catch_coverage, unit = "days")
 
-#edi_number <- reserve_edi_id(user_id = Sys.getenv("edi_user_id"), password = Sys.getenv("edi_password"))
-edi_number <- "edi.1497.1" # reserved 9-20-2023 under srjpe account
+wb <- openxlsx::createWorkbook()
+for (sheet_name in names(metadata)) {
+  openxlsx::addWorksheet(wb, sheetName = sheet_name)
+  openxlsx::writeData(wb, sheet = sheet_name, x = metadata[[sheet_name]], rowNames = FALSE)
+}
+openxlsx::saveWorkbook(wb, file = excel_path, overwrite=TRUE)
+
+#edi_number <- reserve_edi_id(user_id = Sys.getenv("edi_user_id"), 
+vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
+previous_edi_number <- tail(vl['edi_version'], n=1)
+previous_edi_number <- previous_edi_number$edi_version
+previous_edi_ver <- as.numeric(stringr::str_extract(previous_edi_number, "[^.]*$"))
+current_edi_ver <- as.character(previous_edi_ver + 1)
+previous_edi_id_list <- stringr::str_split(previous_edi_number, "\\.")
+previous_edi_id <- sapply(previous_edi_id_list, '[[', 2)
+current_edi_number <- paste0("edi.", previous_edi_id, ".", current_edi_ver)
+
+new_row <- data.frame(
+  edi_version = current_edi_number,
+  date = as.character(Sys.Date())
+)
+vl <- bind_rows(vl, new_row)
+write.csv(vl, "data-raw/version_log.csv", row.names=FALSE)
 
 dataset <- list() %>%
   add_pub_date() %>%
@@ -61,19 +89,19 @@ custom_units <- data.frame(id = c("number of rotations", "NTU", "revolutions per
 
 unitList <- EML::set_unitList(custom_units)
 
-eml <- list(packageId = edi_number,
+eml <- list(packageId = current_edi_number,
             system = "EDI",
             access = add_access(),
             dataset = dataset,
             additionalMetadata = list(metadata = list(unitList = unitList))
 )
-edi_number
-EML::write_eml(eml, paste0(edi_number, ".xml"))
-EML::eml_validate(paste0(edi_number, ".xml"))
-
-EMLaide::evaluate_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
-EMLaide::upload_edi_package(Sys.getenv("edi_user_id"), Sys.getenv("edi_password"), paste0(edi_number, ".xml"))
-
+EML::write_eml(eml, paste0(current_edi_number, ".xml"))
+message("EML Metadata generated")
+EMLaide::update_edi_package(user_id = secret_edi_username,
+                            password = secret_edi_password,
+                            eml_file_path = paste0(getwd(), "/", current_edi_number, ".xml"),
+                            existing_package_identifier = paste0("edi.",previous_edi_id, ".", previous_edi_ver, ".xml"),
+                            environment = "staging")
 # The code below is for updating the eml number and will need to be implemented when
 # we move to automated updates
 # doc <- read_xml(paste0(edi_number, ".xml"))

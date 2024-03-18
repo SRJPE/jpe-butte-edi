@@ -23,45 +23,48 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v2
         with: 
           pandoc-version: '2.17.1'
+      - name: Print branch name
+        run: |
+          echo "Current branch: ${{github.ref_name }}"
+      - name: Pull data
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git pull origin ${{github.ref_name }}
+      - name: Merge branch to main
+        run: |
+          git checkout test1
+          git pull
+          git merge ${{ github.ref_name }} -m"merging validated upload branch to main"
+          git push
       - name: Show folder structure
         run: ls -R
         working-directory: ${{ github.workspace }}
       - name: Check workspace
         run: |
-          echo ${{ github.workspace }} 
-      - name: run create xml
+          echo ${{ github.workspace }}
+      - name: Run create xml
         env:
-            EDI_USERNAME: ${{ secrets.EDI_USERNAME }}
-            EDI_PASSWORD: ${{ secrets.EDI_PASSWORD }}
+          EDI_USERNAME: ${{ secrets.EDI_USERNAME }}
+          EDI_PASSWORD: ${{ secrets.EDI_PASSWORD }}
         run: |
           source('data-raw/make_metadata_xml.R')
         shell: Rscript {0}
-      - name: Print branch name
+      - name: Push to main
         run: |
-          echo "Current branch: ${{github.ref_name }}"
-      - name: commit xml
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git pull origin ${{github.ref_name }}
           git add .
-          git commit -m "updates xml"
+          git commit -m "update xml"
           git push
-      - name: merge branch to test
+      - name: Finish action
         run: |
-          git branch
-          git checkout test
-          git pull
-          git merge ${{ github.ref_name }} -m"merging validated upload branch to test"
-          git push
-      - name: delete old branch
+          echo "Xml generated and pushed"
+      - name: Delete old branch
         run: |
           git branch -D ${{ github.ref_name }}
           git push origin --delete ${{ github.ref_name }}
-      - name: run shell script to delete previous xml version
-        run: |
-          chmod +x delete-file.sh
-          ./delete-file.sh 
-          git commit -m "Remove previous xml version" -a
-          git push
-      
+      # - name: run shell script to delete previous xml version
+      #   run: |
+      #     chmod +x delete-file.sh
+      #     ./delete-file.sh
+      #     git commit -m "Remove previous xml version" -a
+      #     git push
