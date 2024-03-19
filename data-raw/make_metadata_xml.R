@@ -7,10 +7,10 @@ secret_edi_username = Sys.getenv("EDI_USERNAME")
 secret_edi_password = Sys.getenv("EDI_PASSWORD")
 
 datatable_metadata <-
-  dplyr::tibble(filepath = c("data/butte_catch_edi.csv",
-                             "data/butte_recapture_edi.csv",
-                             "data/butte_release_edi.csv",
-                             "data/butte_trap_edi.csv"),
+  dplyr::tibble(filepath = c("data/butte_catch.csv",
+                             "data/butte_recapture.csv",
+                             "data/butte_release.csv",
+                             "data/butte_trap.csv"),
                 attribute_info = c("data-raw/metadata/butte_catch_metadata.xlsx",
                                    "data-raw/metadata/butte_recapture_metadata.xlsx",
                                    "data-raw/metadata/butte_release_metadata.xlsx",
@@ -19,7 +19,7 @@ datatable_metadata <-
                                           "Recaptured catch",
                                           "Release trial",
                                           "Daily trap operations"),
-                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/test1/data/",
+                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/test/data/",
                                        c("butte_catch.csv",
                                          "butte_recapture.csv",
                                          "butte_release.csv",
