@@ -1,5 +1,5 @@
 library(EMLaide)
-library(tidyverse)
+library(dplyr)
 library(readxl)
 library(EML)
 
@@ -45,7 +45,7 @@ for (sheet_name in names(metadata)) {
 }
 openxlsx::saveWorkbook(wb, file = excel_path, overwrite=TRUE)
 
-#edi_number <- reserve_edi_id(user_id = Sys.getenv("edi_user_id"), 
+#edi_number <- reserve_edi_id(user_id = Sys.getenv("edi_user_id"),
 vl <- readr::read_csv("data-raw/version_log.csv", col_types = c('c', "D"))
 previous_edi_number <- tail(vl['edi_version'], n=1)
 previous_edi_number <- previous_edi_number$edi_version
