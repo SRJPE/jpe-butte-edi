@@ -33,7 +33,7 @@ names(metadata) <- sheets
 abstract_docx <- "data-raw/metadata/abstract.docx"
 #methods_docx <- "data-raw/metadata/methods.docx"
 methods_docx <- "data-raw/metadata/methods.md" # use md for bulleted formatting. I don't believe lists are allowed in methods (https://edirepository.org/news/news-20210430.00)
-methods_docx <- "data-raw/metadata/methods.docx"
+#methods_docx <- "data-raw/metadata/methods.docx"
 catch_df <- readr::read_csv("data/butte_catch.csv")
 catch_coverage <- tail(catch_df$visitTime, 1)
 metadata$coverage$end_date <- lubridate::floor_date(catch_coverage, unit = "days")
