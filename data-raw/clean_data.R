@@ -9,7 +9,7 @@ gcs_global_bucket(bucket = Sys.getenv("GCS_DEFAULT_BUCKET"))
 
 
 # CAMP database table - 2015-2023
-catch <- read_xlsx(here::here("data-raw", "butte_catch_edi.xlsx"),
+catch <- read_xlsx("data-raw/butte_catch.xlsx",
                    sheet = "Catch_Raw_EDI",
                    col_types = c("numeric", "numeric", "numeric", "text", "numeric",
                                 "text", "text", "text", "numeric", "numeric",
@@ -34,7 +34,8 @@ gcs_get_object(object_name = "standard-format-data/standard_rst_catch.csv",
 # standardize variable names (siteName and subSiteName differ between tables)
 # and remove columns not included in original
 # TODO we don't have data for 2009, 2010, 2011
-butte_historical_catch <- read_csv("data-raw/standard_catch.csv") |>
+butte_historical_catch <- read_csv("data-raw/standard_catch.csv")
+butte_historical_catch <- butte_historical_catch |>
   filter(stream == "butte creek",
          date < min(catch$visitTime, na.rm = T)) |>
   rename(visitTime = date,
@@ -53,9 +54,8 @@ butte_historical_catch <- read_csv("data-raw/standard_catch.csv") |>
          subSiteName = case_when(subSiteName == "okie dam 1" ~ "pp rst",
                                  subSiteName == "okie dam 2" ~ "pp rst 2",
                                  subSiteName == "okie dam fyke trap" ~ "canal trap box",
-                                 TRUE ~ subSiteName)) |>
-  glimpse()
-
+                                 TRUE ~ subSiteName))
+write.csv(butte_historical_catch, "data/historic_data/butte_catch.csv", row.names = FALSE)
 # combine
 final_catch <- bind_rows(catch, butte_historical_catch) |>
   glimpse()
@@ -63,13 +63,13 @@ final_catch <- bind_rows(catch, butte_historical_catch) |>
 write_csv(final_catch, here::here("data","butte_catch_edi.csv"))
 
 # CAMP database table - 2015-2023
-trap <- read_xlsx(here::here("data-raw", "butte_trap_edi.xlsx"),
+trap <- read_xlsx("data-raw/butte_trap.xlsx",
                   sheet = "Trap_Visit_EDI") |>
   mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
                                  TRUE ~ subSiteName),
          siteName = ifelse(siteName %in% c("Okie RST", "Parrot-Phelan RST", "Parrott-Phelan canal trap box"),
                            "Parrot-Phelan", siteName),
-         dissolvedOxygen = as.numeric(dissolvedOxygen),
+         # dissolvedOxygen = as.numeric(dissolvedOxygen),
          siteName = tolower(siteName),
          subSiteName = tolower(subSiteName),
          visitType = tolower(visitType),
@@ -108,9 +108,10 @@ butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
             debris_volume, debris_level,
             time, sample_period_revolutions,
             comments, trap_visit_id, include, trap_stop_time,
-            stream)) |>
+            stream, counterAtStart)) |>
   glimpse()
 
+write.csv(butte_historical_trap, "data/historic_data/butte_trap.csv", row.names = FALSE)
 # combine
 trap_final <- bind_rows(trap, butte_historical_trap) |>
   glimpse()
