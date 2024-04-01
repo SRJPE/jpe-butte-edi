@@ -29,3 +29,5 @@ Natural origin Chinook captured in RST and DST are the source of released fish. 
 ## Trap efficiency mark
 
 Fish are marked with Bismarck Brown Y (BBY) whole body stain. 
+
+## Note: data within the current year’s monitoring season are considered provisional.
