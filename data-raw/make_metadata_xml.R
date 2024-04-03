@@ -19,7 +19,7 @@ datatable_metadata <-
                                           "Recaptured catch",
                                           "Release trial",
                                           "Daily trap operations"),
-                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/test/data/",
+                datatable_url = paste0("https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/",
                                        c("butte_catch.csv",
                                          "butte_recapture.csv",
                                          "butte_release.csv",
