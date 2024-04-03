@@ -101,7 +101,7 @@ EMLaide::update_edi_package(user_id = secret_edi_username,
                             password = secret_edi_password,
                             eml_file_path = paste0(getwd(), "/", current_edi_number, ".xml"),
                             existing_package_identifier = paste0("edi.",previous_edi_id, ".", previous_edi_ver, ".xml"),
-                            environment = "staging")
+                            environment = "production")
 
 # The code below is for updating the eml number and will need to be implemented when
 # we move to automated updates
