@@ -94,6 +94,8 @@ butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
                                 TRUE ~ subsite),
          trapVisitID = as.numeric(trap_visit_id),
          includeCatch = ifelse(include == TRUE, "Yes", "No")) |>
+  mutate(time = "12:00:00",
+         visitTime = lubridate::ymd_hms(paste(visitTime, time))) |>
   rename(visitType = visit_type,
          fishProcessed = fish_processed,
          trapFunctioning = trap_functioning,
