@@ -36,8 +36,8 @@ gcs_get_object(object_name = "standard-format-data/standard_rst_catch.csv",
 # TODO we don't have data for 2009, 2010, 2011
 butte_historical_catch <- read_csv("data-raw/standard_catch.csv")
 butte_historical_catch <- butte_historical_catch |>
-  filter(stream == "butte creek",
-         date < min(catch$visitTime, na.rm = T)) |>
+  filter(stream == "butte creek") |>
+         # date < min(butte_historical_catch$visitTime, na.rm = T)) |>
   rename(visitTime = date,
          atCaptureRun = run,
          forkLength = fork_length,
@@ -49,12 +49,15 @@ butte_historical_catch <- butte_historical_catch |>
          subSiteName = subsite) |>
   select(-c(dead, interpolated, stream, site_group, weight,
             is_yearling, run_method, adipose_clipped)) |>
-  mutate(releaseID = as.numeric(releaseID),
+  mutate(time = "12:00:00",
+         visitTime = lubridate::ymd_hms(paste(visitTime, time)),
+         releaseID = as.numeric(releaseID),
          siteName = ifelse(siteName == "okie dam", "parrot-phelan", siteName),
          subSiteName = case_when(subSiteName == "okie dam 1" ~ "pp rst",
                                  subSiteName == "okie dam 2" ~ "pp rst 2",
                                  subSiteName == "okie dam fyke trap" ~ "canal trap box",
-                                 TRUE ~ subSiteName))
+                                 TRUE ~ subSiteName)) |>
+  select(-c(time)) |> glimpse()
 write.csv(butte_historical_catch, "data/historic_data/butte_catch.csv", row.names = FALSE)
 # combine
 final_catch <- bind_rows(catch, butte_historical_catch) |>
