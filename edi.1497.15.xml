@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="edi.1497.15" system="EDI" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+    <allow>
+      <principal>cvpia</principal>
+      <permission>write</permission>
+    </allow>
+  </access>
+  <dataset>
+    <shortName>Butte Creek RST</shortName>
+    <title>Monitoring juvenile Chinook salmon outmigration using rotary screw traps on Butte Creek</title>
+    <creator>
+      <individualName>
+        <givenName>Grant</givenName>
+        <surName>Henley</surName>
+      </individualName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
+      <electronicMailAddress>grantton.henley@wildlife.ca.gov</electronicMailAddress>
+    </creator>
+    <associatedParty>
+      <individualName>
+        <givenName>Anna</givenName>
+        <surName>Allison</surName>
+      </individualName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
+      <electronicMailAddress>anna.allison@wildlife.ca.gov</electronicMailAddress>
+      <role>principal investigator</role>
+    </associatedParty>
+    <pubDate>2025-01-28</pubDate>
+    <abstract>
+      <para>
+    The California Department of Fish and Wildlife (CDFW) conducts
+    juvenile salmonid emigration monitoring on Butte Creek at the
+    Parrot-Phelan Diversion Dam near Chico, California. Monitoring is
+    conducted annually from October through June utilizing an 8-ft
+    diameter rotary screw trap (RST) and a diversion screen trap (DST).
+    Data from this monitoring is used to estimate juvenile spring-run
+    Chinook salmon (Oncorhynchus tshawytscha) abundance and passage,
+    identify alevin emergence timing, document juvenile size at
+    emigration, and document rearing and emigration patterns. This data
+    will also be used to inform the development of a juvenile production
+    estimate (JPE) for spring-run Chinook salmon in the Sacramento River
+    Watershed as required by Condition of Approval 7.5.2 of Incidental
+    Take Permit No. 2081-2019-006-00 (ITP) issued by CDFW to California
+    Department of Water Resources (DWR) for the long-term operation of
+    the State Water Project. Salmonid data collected from the Butte
+    Creek RST, among other datasets, is also used by the Salmon
+    Monitoring Team (SaMT) to understand the movement of juvenile salmon
+    in the Sacramento River Watershed to estimate the number of
+    winter-run and spring-run Chinook salmon that have entered the
+    Sacramento-San Joaquin Delta (Delta). SaMT is a real-time operations
+    monitoring team required by Condition of Approval 8.1.2 of the ITP
+    which meets weekly from October through June, to provide advice for
+    real-time management of SWP operations to DWR, CDFW, and the Water
+    Operation Management Team (WOMT) to minimize take of winter-run and
+    spring-run Chinook salmon in the Delta.
+  </para>
+      <para>
+    Note: data within the current year’s monitoring season are
+    considered provisional.
+  </para>
+    </abstract>
+    <keywordSet>
+      <keyword>spring run</keyword>
+      <keyword>fall run</keyword>
+      <keyword>trap</keyword>
+      <keyword>catch</keyword>
+      <keyword>juvenile production estimate</keyword>
+      <keyword>Oncorhynchus tshawytscha</keyword>
+      <keyword>RST</keyword>
+      <keyword>California</keyword>
+      <keyword>Central Valley</keyword>
+      <keyword>SRJPE</keyword>
+      <keyword>Chinook salmon</keyword>
+    </keywordSet>
+    <intellectualRights>
+      <para>This information is released under the Creative Commons license - Attribution - CC BY (https://creativecommons.org/licenses/by/4.0/). The consumer of these data ("Data User" herein) is required to cite it appropriately in any publication that results from its use. The Data User should realize that these data may be actively used by others for ongoing research and that coordination may be necessary to prevent duplicate publication. The Data User is urged to contact the authors of these data if any questions about methodology or results occur. Where appropriate, the Data User is encouraged to consider collaboration or co-authorship with the authors. The Data User should realize that misinterpretation of data may occur if used out of context of the original study. While substantial efforts are made to ensure the accuracy of data and associated documentation, complete accuracy of data sets cannot be guaranteed. All data are made available "as is." The Data User should be aware, however, that data are updated periodically and it is the responsibility of the Data User to check for new versions of the data. The data authors and the repository where these data were obtained shall not be liable for damages resulting from any use or misinterpretation of the data. Thank you.</para>
+    </intellectualRights>
+    <licensed>
+      <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+      <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+      <identifier>CC-BY-4.0</identifier>
+    </licensed>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Butte Creek Rotary Screw Trap</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-121.7809</westBoundingCoordinate>
+          <eastBoundingCoordinate>-121.7141</eastBoundingCoordinate>
+          <northBoundingCoordinate>39.7224</northBoundingCoordinate>
+          <southBoundingCoordinate>39.6973</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1995-12-01</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2024-01-22</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+      <maintenanceUpdateFrequency>monthly</maintenanceUpdateFrequency>
+    </maintenance>
+    <contact>
+      <individualName>
+        <givenName>Grant</givenName>
+        <surName>Henley</surName>
+      </individualName>
+      <organizationName>California Department of Fish and Wildlife</organizationName>
+      <electronicMailAddress>grantton.henley@wildlife.ca.gov</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Trap equipment</title>
+            <para>
+      The traps used are an 8-foot Rotary Screw Trap (RST) and a
+      Diversion Screen Trap (DST).
+    </para>
+          </section>
+          <section>
+            <title>Current trap location</title>
+            <para>
+      The current trap location is at the Parrot-Phelan Diversion Dam on
+      Butte Creek near Chico, California.
+    </para>
+          </section>
+          <section>
+            <title>Monitoring schedule</title>
+            <para>
+      Continuously trapping October through June except under high flows
+      and unsafe working conditions. Traps are serviced daily within a
+      24-hour period, more if needed due to high debris amounts or fish
+      catch.
+    </para>
+          </section>
+          <section>
+            <title>Daily environmental data</title>
+            <para>
+      Daily environmental data collected are water temperature (Celsius)
+      and flow (cubic feet per second).
+    </para>
+          </section>
+          <section>
+            <title>Fish measurements</title>
+            <para>
+      Fork length measurements are taken to the nearest mm for 50
+      randomly selected Chinook salmon and the first 10 Steelhead.
+    </para>
+          </section>
+          <section>
+            <title>Fish counts</title>
+            <para>
+      All fish not measured are plus counted by hand. If juvenile salmon
+      are highly abundant, a simple weight count method is used to count
+      Chinook in increments of 500-1,000 or more to speed up processing.
+    </para>
+          </section>
+          <section>
+            <title>Trap efficiency trials</title>
+            <para>
+      Natural origin Chinook captured in RST and DST are the source of
+      released fish. Trap efficiency trials are conducted once per week
+      from December to May across variable flow and environmental
+      conditions as catch totals allow. A minimum of three consecutive
+      days of fishing after the release date is required for a release
+      to be included in analysis. Mortality between the release point
+      and the trap is assumed to be negligible. Release site is located
+      approximately 1 mile upstream of the trapping site.
+    </para>
+          </section>
+          <section>
+            <title>Trap efficiency mark</title>
+            <para>
+      Fish are marked with Bismarck Brown Y (BBY) whole body stain.
+    </para>
+          </section>
+          <section>
+            <title>Note: data within the current year’s monitoring season are
+    considered provisional.</title>
+            <para>
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Monitoring juvenile Chinook salmon outmigration using rotary screw traps on Butte Creek</title>
+      <personnel>
+        <individualName>
+          <givenName>Grant</givenName>
+          <surName>Henley</surName>
+        </individualName>
+        <organizationName>California Department of Fish and Wildlife</organizationName>
+        <electronicMailAddress>grantton.henley@wildlife.ca.gov</electronicMailAddress>
+        <role>Project Lead</role>
+      </personnel>
+      <award>
+        <funderName>California Department of Water Resources</funderName>
+        <title>Department of Water Resources Division of Integrated Science and Engineering. Past Funding: U.S. Fish and Wildlife Service Sport Fish Restoration Act Program, Pacific Gas &amp; Electric Company, and California Department of Fish and Wildlife.</title>
+      </award>
+    </project>
+    <otherEntity>
+      <entityName>butte.zip</entityName>
+      <entityDescription>Zipped folder</entityDescription>
+      <physical>
+        <objectName>butte.zip</objectName>
+        <size unit="bytes">947523</size>
+        <authentication method="MD5">8de03052be0a9784a606a7d421ac3d6a</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+        <distribution>
+          <online>
+            <url function="download">https://raw.githubusercontent.com/SRJPE/jpe-butte-edi/main/data/butte.zip</url>
+          </online>
+        </distribution>
+      </physical>
+      <entityType>zip</entityType>
+    </otherEntity>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="number of rotations" name="number of rotations" unitType="dimensionless">
+          <description>number of rotations</description>
+        </unit>
+        <unit id="NTU" name="NTU" unitType="dimensionless">
+          <description>nephelometric turbidity units, common unit for measuring turbidity</description>
+        </unit>
+        <unit id="revolutions per minute" name="revolutions per minute" unitType="dimensionless">
+          <description>number of revolutions per minute</description>
+        </unit>
+        <unit id="number of fish" name="number of fish" unitType="dimensionless">
+          <description>number of fish counted</description>
+        </unit>
+        <unit id="days" name="days" unitType="dimensionless">
+          <description>number of days</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
