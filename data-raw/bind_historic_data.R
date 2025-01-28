@@ -24,7 +24,7 @@ append_historic_data <- function(historic_path, new_path) {
   # Combine data
   full_data <- dplyr::bind_rows(historic_data, new_data)
   # print(new_path)
-  # print(colnames(full_data))
+  print(colnames(full_data))
   if (grepl("butte_catch.csv", new_path)) {
     col_order <- c("ProjectDescriptionID",
                    "catchRawID",
@@ -55,7 +55,7 @@ append_historic_data <- function(historic_path, new_path) {
                    "trapFunctioning",
                    "counterAtEnd",
                    "rpmRevolutionsAtStart",
-                   "rpmRevolutionsAtend",
+                   "rpmRevolutionsAtEnd",
                    "includeCatch",
                    "discharge",
                    "waterVel",
