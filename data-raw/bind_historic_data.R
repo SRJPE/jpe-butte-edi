@@ -23,6 +23,7 @@ append_historic_data <- function(historic_path, new_path) {
   }
   # Combine data
   full_data <- dplyr::bind_rows(historic_data, new_data)
+  print(colnames(full_data))
   col_order <- c("ProjectDescriptionID",
                  "catchRawID",
                  "trapVisitID",
