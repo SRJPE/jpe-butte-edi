@@ -2,6 +2,7 @@ library(EMLaide)
 library(dplyr)
 library(readxl)
 library(EML)
+library(readr)
 
 secret_edi_username = Sys.getenv("EDI_USERNAME")
 secret_edi_password = Sys.getenv("EDI_PASSWORD")
