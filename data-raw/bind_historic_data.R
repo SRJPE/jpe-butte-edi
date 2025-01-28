@@ -23,26 +23,46 @@ append_historic_data <- function(historic_path, new_path) {
   }
   # Combine data
   full_data <- dplyr::bind_rows(historic_data, new_data)
-  print(new_path)
-  print(colnames(full_data))
-  col_order <- c("ProjectDescriptionID",
-                 "catchRawID",
-                 "trapVisitID",
-                 "commonName",
-                 "releaseID",
-                 "atCaptureRun",
-                 "fishOrigin",
-                 "lifeStage",
-                 "forkLength",
-                 "totalLength",
-                 "n",
-                 "visitTime",
-                 "visitType",
-                 "siteName",
-                 "subSiteName",
-                 "finalRun",
-                 "actualCount")
-  full_data <- full_data[,col_order]
+  # print(new_path)
+  # print(colnames(full_data))
+  if (grepl("butte_catch.csv", new_path)) {
+    col_order <- c("ProjectDescriptionID",
+                   "catchRawID",
+                   "trapVisitID",
+                   "commonName",
+                   "releaseID",
+                   "atCaptureRun",
+                   "fishOrigin",
+                   "lifeStage",
+                   "forkLength",
+                   "totalLength",
+                   "n",
+                   "visitTime",
+                   "visitType",
+                   "siteName",
+                   "subSiteName",
+                   "finalRun",
+                   "actualCount")
+    full_data <- full_data[,col_order]
+  } else{
+    col_order <- c("projectDescriptionID",
+                   "trapVisitID",
+                   "siteName",
+                   "subSiteName",
+                   "visitTime",
+                   "visitType",
+                   "fishProcessed",
+                   "trapFunctioning",
+                   "counterAtEnd",
+                   "rpmRevolutionsAtStart",
+                   "rpmRevolutionsAtend",
+                   "includeCatch",
+                   "discharge",
+                   "waterVel",
+                   "waterTemp",
+                   "turbidity")
+    full_data <- full_data[,col_order]
+  }
   # Write updated data back to the temporary directory
   write_csv(full_data, new_file)
   setwd(temp_dir)
