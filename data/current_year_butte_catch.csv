@@ -2269,3 +2269,189 @@ ProjectDescriptionID,catchRawID,trapVisitID,commonName,releaseID,atCaptureRun,fi
 11,63447,3343,Riffle sculpin,255,Not recorded,Natural,Not recorded,,55.0,1,2025-03-10T09:00:58Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
 11,63448,3343,Riffle sculpin,255,Not recorded,Natural,Not recorded,,50.0,1,2025-03-10T09:00:58Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
 11,63449,3343,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,54.0,1,2025-03-10T09:00:58Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63450,3344,Riffle sculpin,255,Not recorded,Natural,Not recorded,,77.0,1,2025-03-11T08:45:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63451,3344,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,71.0,1,2025-03-11T08:45:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63452,3345,California roach,255,Not recorded,Natural,Not recorded,,34.0,1,2025-03-11T09:00:13Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63453,3346,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-12T09:30:27Z,End trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63454,3346,Steelhead / rainbow trout,255,Not recorded,Natural,Not recorded,,,0,2025-03-12T09:30:27Z,End trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63455,3347,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-12T09:00:30Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63456,3347,Steelhead / rainbow trout,255,Not recorded,Natural,Not recorded,,,0,2025-03-12T09:00:30Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63459,3348,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,163.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63460,3348,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,134.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63461,3348,Unknown minnow,255,Not recorded,Natural,Not recorded,,27.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63462,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,137.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63463,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,138.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63464,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,118.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63465,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,125.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63466,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,114.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63467,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,129.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63468,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,133.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63469,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,157.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63470,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,133.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63471,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,137.0,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63472,3348,Western brook lamprey,255,Not recorded,Natural,Not recorded,,,1,2025-03-13T09:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63473,3349,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-13T10:30:52Z,Start trap & begin trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63474,3349,Steelhead / rainbow trout,255,Not recorded,Natural,Not recorded,,,0,2025-03-13T10:30:52Z,Start trap & begin trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63475,3350,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,154.0,1,2025-03-14T08:45:19Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63476,3350,Western brook lamprey,255,Not recorded,Natural,Not recorded,,121.0,1,2025-03-14T08:45:19Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63477,3350,Western brook lamprey,255,Not recorded,Natural,Not recorded,,136.0,1,2025-03-14T08:45:19Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63478,3351,Steelhead / rainbow trout,255,Not recorded,Natural,Juvenile,105.0,,1,2025-03-14T09:00:14Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63479,3351,California roach,255,Not recorded,Natural,Not recorded,,54.0,1,2025-03-14T09:00:14Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63482,3352,Riffle sculpin,255,Not recorded,Natural,Not recorded,,65.0,1,2025-03-15T08:45:24Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63483,3352,Sacramento sucker,255,Not recorded,Natural,Not recorded,,47.0,1,2025-03-15T08:45:24Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63487,3353,Hardhead,255,Not recorded,Natural,Not recorded,,39.0,1,2025-03-15T08:45:51Z,Continue trapping,Parrot-Phelan RST,PP RST,Not recorded,Yes
+11,63488,3353,Unknown minnow,255,Not recorded,Natural,Not recorded,,30.0,1,2025-03-15T08:45:51Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63489,3353,Unknown minnow,255,Not recorded,Natural,Not recorded,,32.0,1,2025-03-15T08:45:51Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63490,3354,Riffle sculpin,255,Not recorded,Natural,Not recorded,,77.0,1,2025-03-16T08:30:38Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63491,3354,Steelhead / rainbow trout,255,Not recorded,Natural,Not recorded,,,0,2025-03-16T08:30:38Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63492,3355,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-16T08:45:21Z,End trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63493,3355,Steelhead / rainbow trout,255,Not recorded,Natural,Not recorded,,,0,2025-03-16T08:45:21Z,End trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63494,3356,Riffle sculpin,255,Not recorded,Natural,Not recorded,,86.0,1,2025-03-17T08:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63495,3356,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,102.0,1,2025-03-17T08:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63496,3356,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,137.0,1,2025-03-17T08:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63497,3356,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,132.0,1,2025-03-17T08:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63498,3356,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,132.0,1,2025-03-17T08:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63499,3356,Western brook lamprey,255,Not recorded,Natural,Not recorded,,147.0,1,2025-03-17T08:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63500,3356,Western brook lamprey,255,Not recorded,Natural,Not recorded,,134.0,1,2025-03-17T08:45:53Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63501,3357,Pacific lamprey,255,Not recorded,Natural,Not recorded,,123.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63502,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,131.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63503,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,133.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63504,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,122.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63505,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,129.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63506,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,128.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63507,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,151.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63508,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,133.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63509,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,136.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63510,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,161.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63511,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,123.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63512,3357,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,,6,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63513,3357,Western brook lamprey,255,Not recorded,Natural,Not recorded,,128.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63514,3357,Western brook lamprey,255,Not recorded,Natural,Not recorded,,130.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63515,3357,Western brook lamprey,255,Not recorded,Natural,Not recorded,,121.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63516,3357,Western brook lamprey,255,Not recorded,Natural,Not recorded,,148.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63517,3357,Western brook lamprey,255,Not recorded,Natural,Not recorded,,144.0,1,2025-03-18T09:00:05Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63518,3358,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-19T10:00:26Z,Start trap & begin trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63519,3358,Steelhead / rainbow trout,255,Not recorded,Natural,Not recorded,,,0,2025-03-19T10:00:26Z,Start trap & begin trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63520,3359,California roach,255,Not recorded,Natural,Not recorded,,37.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63521,3359,Riffle sculpin,255,Not recorded,Natural,Not recorded,,49.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63522,3359,Riffle sculpin,255,Not recorded,Natural,Not recorded,,64.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63523,3359,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,132.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63524,3359,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,127.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63525,3359,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,127.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63526,3359,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,130.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63527,3359,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,131.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63528,3359,Western brook lamprey,255,Not recorded,Natural,Not recorded,,139.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63529,3359,Western brook lamprey,255,Not recorded,Natural,Not recorded,,136.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63530,3359,Western brook lamprey,255,Not recorded,Natural,Not recorded,,116.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63531,3359,Western brook lamprey,255,Not recorded,Natural,Not recorded,,142.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63532,3359,Western brook lamprey,255,Not recorded,Natural,Not recorded,,114.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63533,3359,Western brook lamprey,255,Not recorded,Natural,Not recorded,,127.0,1,2025-03-19T09:30:02Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63536,3360,Riffle sculpin,255,Not recorded,Natural,Not recorded,,52.0,1,2025-03-20T08:15:40Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Fall,Yes
+11,63537,3361,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-20T08:15:40Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63538,3361,Steelhead / rainbow trout,255,Not recorded,Natural,Not recorded,,,0,2025-03-20T08:15:40Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63541,3362,Western brook lamprey,255,Not recorded,Natural,Not recorded,,110.0,1,2025-03-21T09:45:58Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63542,3362,Western brook lamprey,255,Not recorded,Natural,Not recorded,,136.0,1,2025-03-21T09:45:58Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63545,3363,California roach,255,Not recorded,Natural,Not recorded,,42.0,1,2025-03-21T10:00:38Z,Unplanned restart,Parrot-Phelan RST,PP RST,Not recorded,Yes
+11,63548,3364,Hardhead,255,Not recorded,Natural,Not recorded,,39.0,1,2025-03-22T08:45:35Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63549,3364,Riffle sculpin,255,Not recorded,Natural,Not recorded,,68.0,1,2025-03-22T08:45:35Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63550,3364,Riffle sculpin,255,Not recorded,Natural,Not recorded,,50.0,1,2025-03-22T08:45:35Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63551,3364,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,169.0,1,2025-03-22T08:45:35Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63552,3364,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,130.0,1,2025-03-22T08:45:35Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63553,3364,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,102.0,1,2025-03-22T08:45:35Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,Not recorded,Yes
+11,63556,3365,Bluegill,255,Not recorded,Natural,Not recorded,,83.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,Not recorded,Yes
+11,63557,3365,California roach,255,Not recorded,Natural,Not recorded,,39.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63558,3365,Riffle sculpin,255,Not recorded,Natural,Not recorded,,76.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63559,3365,Riffle sculpin,255,Not recorded,Natural,Not recorded,,50.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63560,3365,Riffle sculpin,255,Not recorded,Natural,Not recorded,,49.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63561,3365,Riffle sculpin,255,Not recorded,Natural,Not recorded,,66.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63562,3365,Riffle sculpin,255,Not recorded,Natural,Not recorded,,53.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63563,3365,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,80.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63564,3365,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,36.0,1,2025-03-22T09:00:41Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63565,3366,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63566,3366,California roach,255,Not recorded,Natural,Not recorded,,58.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63567,3366,Hardhead,255,Not recorded,Natural,Not recorded,,40.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63568,3366,Hardhead,255,Not recorded,Natural,Not recorded,,46.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63569,3366,Hardhead,255,Not recorded,Natural,Not recorded,,42.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63570,3366,Riffle sculpin,255,Not recorded,Natural,Not recorded,,82.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63571,3366,Riffle sculpin,255,Not recorded,Natural,Not recorded,,68.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63572,3366,Riffle sculpin,255,Not recorded,Natural,Not recorded,,43.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63573,3366,Riffle sculpin,255,Not recorded,Natural,Not recorded,,53.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63574,3366,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,167.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63575,3366,Sacramento sucker,255,Not recorded,Natural,Not recorded,,56.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63576,3366,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,114.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63577,3366,Western brook lamprey,255,Not recorded,Natural,Not recorded,,131.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63578,3366,Western brook lamprey,255,Not recorded,Natural,Not recorded,,132.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63579,3366,Western brook lamprey,255,Not recorded,Natural,Not recorded,,148.0,1,2025-03-23T09:30:49Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63580,3367,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63581,3367,Riffle sculpin,255,Not recorded,Natural,Not recorded,,53.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63582,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,134.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63583,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,131.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63584,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,121.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63585,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,136.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63586,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,127.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63587,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,147.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63588,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,126.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63589,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,127.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63590,3367,Western brook lamprey,255,Not recorded,Natural,Not recorded,,135.0,1,2025-03-23T09:15:16Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63591,3368,California roach,255,Not recorded,Natural,Not recorded,,39.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63592,3368,California roach,255,Not recorded,Natural,Not recorded,,34.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63593,3368,Unknown lamprey (Entosphenus or Lampetra),255,Not recorded,Natural,Not recorded,,87.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63594,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,155.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63595,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,141.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63596,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,147.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63597,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,114.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63598,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,125.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63599,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,113.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63600,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,144.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63601,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,127.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63602,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,134.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63603,3368,Western brook lamprey,255,Not recorded,Natural,Not recorded,,140.0,1,2025-03-24T09:00:25Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63605,3369,California roach,255,Not recorded,Natural,Not recorded,,26.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63606,3369,California roach,255,Not recorded,Natural,Not recorded,,51.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63607,3369,California roach,255,Not recorded,Natural,Not recorded,,40.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63608,3369,California roach,255,Not recorded,Natural,Not recorded,,52.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63609,3369,California roach,255,Not recorded,Natural,Not recorded,,45.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63610,3369,California roach,255,Not recorded,Natural,Not recorded,,47.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63611,3369,California roach,255,Not recorded,Natural,Not recorded,,40.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63612,3369,Hardhead,255,Not recorded,Natural,Not recorded,,44.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63613,3369,Hardhead,255,Not recorded,Natural,Not recorded,,51.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63614,3369,Hardhead,255,Not recorded,Natural,Not recorded,,40.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63615,3369,Hardhead,255,Not recorded,Natural,Not recorded,,44.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63616,3369,Riffle sculpin,255,Not recorded,Natural,Not recorded,,75.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63617,3369,Riffle sculpin,255,Not recorded,Natural,Not recorded,,47.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63618,3369,Riffle sculpin,255,Not recorded,Natural,Not recorded,,82.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63619,3369,Riffle sculpin,255,Not recorded,Natural,Not recorded,,52.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63620,3369,Riffle sculpin,255,Not recorded,Natural,Not recorded,,46.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63621,3369,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,140.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63622,3369,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63623,3369,Western brook lamprey,255,Not recorded,Natural,Not recorded,,124.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63624,3369,Western brook lamprey,255,Not recorded,Natural,Not recorded,,133.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63625,3369,Western brook lamprey,255,Not recorded,Natural,Not recorded,,133.0,1,2025-03-24T09:15:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63626,3370,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63627,3370,California roach,255,Not recorded,Natural,Not recorded,,43.0,1,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63628,3370,California roach,255,Not recorded,Natural,Not recorded,,43.0,1,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63629,3370,California roach,255,Not recorded,Natural,Not recorded,,39.0,1,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63630,3370,California roach,255,Not recorded,Natural,Not recorded,,47.0,1,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63631,3370,Western brook lamprey,255,Not recorded,Natural,Not recorded,,126.0,1,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63632,3370,Western brook lamprey,255,Not recorded,Natural,Not recorded,,107.0,1,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63633,3370,Western brook lamprey,255,Not recorded,Natural,Not recorded,,115.0,1,2025-03-25T08:30:45Z,Continue trapping,Parrott-Phelan canal trap box,canal trap box,,Yes
+11,63634,3371,Chinook salmon,255,Not recorded,Natural,Not recorded,,,0,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63635,3371,California roach,255,Not recorded,Natural,Not recorded,,44.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63636,3371,California roach,255,Not recorded,Natural,Not recorded,,37.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63637,3371,California roach,255,Not recorded,Natural,Not recorded,,39.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63638,3371,California roach,255,Not recorded,Natural,Not recorded,,51.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63639,3371,California roach,255,Not recorded,Natural,Not recorded,,52.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63640,3371,California roach,255,Not recorded,Natural,Not recorded,,43.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63641,3371,California roach,255,Not recorded,Natural,Not recorded,,40.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63642,3371,California roach,255,Not recorded,Natural,Not recorded,,46.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63643,3371,California roach,255,Not recorded,Natural,Not recorded,,43.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63644,3371,California roach,255,Not recorded,Natural,Not recorded,,44.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63645,3371,California roach,255,Not recorded,Natural,Not recorded,,,9,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63646,3371,Riffle sculpin,255,Not recorded,Natural,Not recorded,,81.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63647,3371,Riffle sculpin,255,Not recorded,Natural,Not recorded,,78.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63648,3371,Riffle sculpin,255,Not recorded,Natural,Not recorded,,53.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63649,3371,Riffle sculpin,255,Not recorded,Natural,Not recorded,,47.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63650,3371,Sacramento pikeminnow,255,Not recorded,Natural,Not recorded,,73.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63651,3371,Tule perch,255,Not recorded,Natural,Not recorded,,166.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63652,3371,Tule perch,255,Not recorded,Natural,Not recorded,,158.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes
+11,63653,3371,Western brook lamprey,255,Not recorded,Natural,Not recorded,,152.0,1,2025-03-25T08:45:59Z,Continue trapping,Parrot-Phelan RST,PP RST,,Yes

@@ -1,4 +1,24 @@
 projectDescriptionID,trapVisitID,siteName,subSiteName,visitTime,visitType,fishProcessed,trapFunctioning,counterAtEnd,rpmRevolutionsAtStart,rpmRevolutionsAtEnd,includeCatch,discharge,waterVel,waterTemp,turbidity
+11,3266,Parrot-Phelan RST,PP RST,2025-01-24T09:45:54Z,Continue trapping,Processed fish,Trap functioning normally,4451.0,3.45000004768372,3.45000004768372,Yes,325.0,,5.09999990463257,0.660000026226044
+11,3267,Parrott-Phelan canal trap box,canal trap box,2025-01-25T08:45:46Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,329.0,,5.30000019073486,0.569999992847443
+11,3268,Parrot-Phelan RST,PP RST,2025-01-25T10:00:20Z,Continue trapping,Processed fish,Trap functioning normally,4732.0,3.29999995231628,3.15000009536743,Yes,329.0,,5.5,0.569999992847443
+11,3269,Parrott-Phelan canal trap box,canal trap box,2025-01-26T08:45:18Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,309.0,,4.69999980926514,0.629999995231628
+11,3270,Parrot-Phelan RST,PP RST,2025-01-26T10:00:43Z,Continue trapping,Processed fish,Trap functioning normally,4629.0,3.29999995231628,3.34999990463257,Yes,309.0,,4.69999980926514,0.629999995231628
+11,3271,Parrott-Phelan canal trap box,canal trap box,2025-01-27T09:00:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,313.0,,0.166999995708466,0.649999976158142
+11,3272,Parrot-Phelan RST,PP RST,2025-01-27T10:00:23Z,Continue trapping,Processed fish,Trap functioning normally,4600.0,3.34999990463257,3.5,Yes,309.0,,4.67000007629395,0.649999976158142
+11,3273,Parrott-Phelan canal trap box,canal trap box,2025-01-28T08:45:23Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,301.0,,3.90000009536743,0.579999983310699
+11,3274,Parrot-Phelan RST,PP RST,2025-01-28T09:45:55Z,Continue trapping,Processed fish,Trap functioning normally,4410.0,3.29999995231628,3.40000009536743,Yes,301.0,,3.90000009536743,0.579999983310699
+11,3275,Parrot-Phelan RST,PP RST,2025-01-29T08:30:42Z,Continue trapping,Processed fish,Trap functioning normally,4175.0,3.34999990463257,3.34999990463257,Yes,301.0,,39.0,0.720000028610229
+11,3276,Parrott-Phelan canal trap box,canal trap box,2025-01-29T09:00:59Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,301.0,,39.0999984741211,0.720000028610229
+11,3277,Parrot-Phelan RST,PP RST,2025-01-30T10:00:33Z,Continue trapping,Processed fish,Trap functioning normally,4649.0,3.25,3.45000004768372,Yes,297.0,,4.19999980926514,0.870000004768372
+11,3278,Parrott-Phelan canal trap box,canal trap box,2025-01-30T09:00:28Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,293.0,,4.19999980926514,0.870000004768372
+11,3279,Parrott-Phelan canal trap box,canal trap box,2025-01-31T10:00:24Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,317.0,,5.30000019073486,0.529999971389771
+11,3280,Parrot-Phelan RST,PP RST,2025-01-31T10:30:10Z,End trapping,Processed fish,Trap functioning normally,4601.0,3.54999995231628,0.0,Yes,317.0,,5.30000019073486,0.529999971389771
+11,3281,Parrott-Phelan canal trap box,canal trap box,2025-02-01T08:45:14Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,338.0,,6.69999980926514,0.850000023841858
+11,3282,Parrot-Phelan RST,PP RST,2025-02-01T08:45:58Z,Not applicable (n/a),N/A; not a sampling visit,Trap not in service,,,,Yes,338.0,,6.69999980926514,0.850000023841858
+11,3283,Parrott-Phelan canal trap box,canal trap box,2025-02-02T08:30:56Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,3367.0,,49.0999984741211,27.6000003814697
+11,3284,Parrott-Phelan canal trap box,canal trap box,2025-02-03T08:30:08Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,4247.0,,8.67000007629395,26.3999996185303
+11,3285,Parrott-Phelan canal trap box,canal trap box,2025-02-04T08:45:07Z,End trapping,No fish were caught,Trap stopped functioning,,,,Yes,8340.0,,9.39999961853027,
 11,3218,Parrott-Phelan canal trap box,canal trap box,2025-01-01T08:45:09Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,1031.0,,46.5,3.86999988555908
 11,3219,Parrot-Phelan RST,PP RST,2025-01-01T09:45:03Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,,,5.30000019073486,Yes,1017.0,,46.5999984741211,3.86999988555908
 11,3220,Parrott-Phelan canal trap box,canal trap box,2025-01-02T08:45:54Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,845.0,,8.67000007629395,2.07999992370605
@@ -47,26 +67,6 @@ projectDescriptionID,trapVisitID,siteName,subSiteName,visitTime,visitType,fishPr
 11,3263,Parrott-Phelan canal trap box,canal trap box,2025-01-23T10:00:43Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,325.0,,5.09999990463257,4.67999982833862
 11,3264,Parrot-Phelan RST,PP RST,2025-01-23T11:15:40Z,Continue trapping,Processed fish,Trap functioning normally,5136.0,3.54999995231628,3.54999995231628,Yes,334.0,,5.09999990463257,4.67999982833862
 11,3265,Parrott-Phelan canal trap box,canal trap box,2025-01-24T09:00:15Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,325.0,,5.09999990463257,0.660000026226044
-11,3266,Parrot-Phelan RST,PP RST,2025-01-24T09:45:54Z,Continue trapping,Processed fish,Trap functioning normally,4451.0,3.45000004768372,3.45000004768372,Yes,325.0,,5.09999990463257,0.660000026226044
-11,3267,Parrott-Phelan canal trap box,canal trap box,2025-01-25T08:45:46Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,329.0,,5.30000019073486,0.569999992847443
-11,3268,Parrot-Phelan RST,PP RST,2025-01-25T10:00:20Z,Continue trapping,Processed fish,Trap functioning normally,4732.0,3.29999995231628,3.15000009536743,Yes,329.0,,5.5,0.569999992847443
-11,3269,Parrott-Phelan canal trap box,canal trap box,2025-01-26T08:45:18Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,309.0,,4.69999980926514,0.629999995231628
-11,3270,Parrot-Phelan RST,PP RST,2025-01-26T10:00:43Z,Continue trapping,Processed fish,Trap functioning normally,4629.0,3.29999995231628,3.34999990463257,Yes,309.0,,4.69999980926514,0.629999995231628
-11,3271,Parrott-Phelan canal trap box,canal trap box,2025-01-27T09:00:11Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,313.0,,0.166999995708466,0.649999976158142
-11,3272,Parrot-Phelan RST,PP RST,2025-01-27T10:00:23Z,Continue trapping,Processed fish,Trap functioning normally,4600.0,3.34999990463257,3.5,Yes,309.0,,4.67000007629395,0.649999976158142
-11,3273,Parrott-Phelan canal trap box,canal trap box,2025-01-28T08:45:23Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,301.0,,3.90000009536743,0.579999983310699
-11,3274,Parrot-Phelan RST,PP RST,2025-01-28T09:45:55Z,Continue trapping,Processed fish,Trap functioning normally,4410.0,3.29999995231628,3.40000009536743,Yes,301.0,,3.90000009536743,0.579999983310699
-11,3275,Parrot-Phelan RST,PP RST,2025-01-29T08:30:42Z,Continue trapping,Processed fish,Trap functioning normally,4175.0,3.34999990463257,3.34999990463257,Yes,301.0,,39.0,0.720000028610229
-11,3276,Parrott-Phelan canal trap box,canal trap box,2025-01-29T09:00:59Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,301.0,,39.0999984741211,0.720000028610229
-11,3277,Parrot-Phelan RST,PP RST,2025-01-30T10:00:33Z,Continue trapping,Processed fish,Trap functioning normally,4649.0,3.25,3.45000004768372,Yes,297.0,,4.19999980926514,0.870000004768372
-11,3278,Parrott-Phelan canal trap box,canal trap box,2025-01-30T09:00:28Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,293.0,,4.19999980926514,0.870000004768372
-11,3279,Parrott-Phelan canal trap box,canal trap box,2025-01-31T10:00:24Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,317.0,,5.30000019073486,0.529999971389771
-11,3280,Parrot-Phelan RST,PP RST,2025-01-31T10:30:10Z,End trapping,Processed fish,Trap functioning normally,4601.0,3.54999995231628,0.0,Yes,317.0,,5.30000019073486,0.529999971389771
-11,3281,Parrott-Phelan canal trap box,canal trap box,2025-02-01T08:45:14Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,338.0,,6.69999980926514,0.850000023841858
-11,3282,Parrot-Phelan RST,PP RST,2025-02-01T08:45:58Z,Not applicable (n/a),N/A; not a sampling visit,Trap not in service,,,,Yes,338.0,,6.69999980926514,0.850000023841858
-11,3283,Parrott-Phelan canal trap box,canal trap box,2025-02-02T08:30:56Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,3367.0,,49.0999984741211,27.6000003814697
-11,3284,Parrott-Phelan canal trap box,canal trap box,2025-02-03T08:30:08Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,4247.0,,8.67000007629395,26.3999996185303
-11,3285,Parrott-Phelan canal trap box,canal trap box,2025-02-04T08:45:07Z,End trapping,No fish were caught,Trap stopped functioning,,,,Yes,8340.0,,9.39999961853027,
 11,3286,Parrott-Phelan canal trap box,canal trap box,2025-02-06T09:15:07Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,,,,Yes,2717.0,,7.69999980926514,
 11,3287,Parrott-Phelan canal trap box,canal trap box,2025-02-07T09:00:29Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,3871.0,,8.17000007629395,30.5
 11,3288,Parrott-Phelan canal trap box,canal trap box,2025-02-08T09:00:28Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,2268.0,,7.40000009536743,12.1999998092651
@@ -125,3 +125,31 @@ projectDescriptionID,trapVisitID,siteName,subSiteName,visitTime,visitType,fishPr
 11,3341,Parrot-Phelan RST,PP RST,2025-03-09T08:45:58Z,Continue trapping,No fish were caught,Trap functioning normally,5630.0,4.65000009536743,4.59999990463257,Yes,525.0,,7.40000009536743,1.22000002861023
 11,3342,Parrott-Phelan canal trap box,canal trap box,2025-03-10T08:45:33Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,493.0,,7.5,1.13999998569489
 11,3343,Parrot-Phelan RST,PP RST,2025-03-10T09:00:58Z,Continue trapping,Processed fish,Trap functioning normally,,3.5,4.15000009536743,Yes,504.0,,7.5,1.13999998569489
+11,3344,Parrott-Phelan canal trap box,canal trap box,2025-03-11T08:45:25Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,488.0,,7.59999990463257,1.01999998092651
+11,3345,Parrot-Phelan RST,PP RST,2025-03-11T09:00:13Z,Continue trapping,Processed fish,Trap functioning normally,6077.0,4.5,4.44999980926514,Yes,483.0,,7.59999990463257,1.01999998092651
+11,3346,Parrot-Phelan RST,PP RST,2025-03-12T09:30:27Z,End trapping,No fish were caught,Trap functioning normally,6254.0,4.55000019073486,,Yes,530.0,,8.89999961853027,1.00999999046326
+11,3347,Parrott-Phelan canal trap box,canal trap box,2025-03-12T09:00:30Z,Continue trapping,No fish were caught,Trap functioning normally,,,,Yes,509.0,,8.89999961853027,1.00999999046326
+11,3348,Parrott-Phelan canal trap box,canal trap box,2025-03-13T09:45:53Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,1042.0,,7.80000019073486,6.15000009536743
+11,3349,Parrot-Phelan RST,PP RST,2025-03-13T10:30:52Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,,,5.90000009536743,Yes,1028.0,,7.80000019073486,6.15000009536743
+11,3350,Parrott-Phelan canal trap box,canal trap box,2025-03-14T08:45:19Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,903.0,,7.19999980926514,3.63000011444092
+11,3351,Parrot-Phelan RST,PP RST,2025-03-14T09:00:14Z,Continue trapping,Processed fish,Trap functioning normally,7415.0,5.65000009536743,5.65000009536743,Yes,903.0,,7.19999980926514,3.63000011444092
+11,3352,Parrott-Phelan canal trap box,canal trap box,2025-03-15T08:45:24Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,799.0,,7.0,2.70000004768372
+11,3353,Parrot-Phelan RST,PP RST,2025-03-15T08:45:51Z,Continue trapping,Processed fish,Trap functioning normally,7583.0,5.65000009536743,5.69999980926514,Yes,799.0,,7.0,2.70000004768372
+11,3354,Parrott-Phelan canal trap box,canal trap box,2025-03-16T08:30:38Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,736.0,,8.10000038146973,1.97000002861023
+11,3355,Parrot-Phelan RST,PP RST,2025-03-16T08:45:21Z,End trapping,No fish were caught,Trap functioning normally,7541.0,5.69999980926514,,Yes,742.0,,8.10000038146973,1.97000002861023
+11,3356,Parrott-Phelan canal trap box,canal trap box,2025-03-17T08:45:53Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,2352.0,,8.5,15.7200002670288
+11,3357,Parrott-Phelan canal trap box,canal trap box,2025-03-18T09:00:05Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,1476.0,,7.19999980926514,5.30000019073486
+11,3358,Parrot-Phelan RST,PP RST,2025-03-19T10:00:26Z,Start trap & begin trapping,N/A; not a sampling visit,Trap not in service,,0.0,6.30000019073486,Yes,1172.0,,7.59999990463257,3.07999992370605
+11,3359,Parrott-Phelan canal trap box,canal trap box,2025-03-19T09:30:02Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,1172.0,,7.59999990463257,3.07999992370605
+11,3360,Parrott-Phelan canal trap box,canal trap box,2025-03-20T08:15:40Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,1100.0,,8.5,2.6800000667572
+11,3361,Parrot-Phelan RST,PP RST,2025-03-20T08:15:40Z,Continue trapping,No fish were caught,Trap functioning but not normally,1223.0,0.0,5.94999980926514,Yes,1100.0,,8.5,2.6800000667572
+11,3362,Parrott-Phelan canal trap box,canal trap box,2025-03-21T09:45:58Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,972.0,,9.0,2.16000008583069
+11,3363,Parrot-Phelan RST,PP RST,2025-03-21T10:00:38Z,Unplanned restart,Processed fish,Trap stopped functioning,,,5.90000009536743,Yes,972.0,,9.0,2.16000008583069
+11,3364,Parrott-Phelan canal trap box,canal trap box,2025-03-22T08:45:35Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,897.0,,8.60000038146973,1.96000003814697
+11,3365,Parrot-Phelan RST,PP RST,2025-03-22T09:00:41Z,Continue trapping,Processed fish,Trap functioning normally,7707.0,6.09999990463257,5.84999990463257,Yes,897.0,,8.60000038146973,1.96000003814697
+11,3366,Parrot-Phelan RST,PP RST,2025-03-23T09:30:49Z,Continue trapping,Processed fish,Trap functioning normally,7829.0,5.90000009536743,5.75,Yes,831.0,,8.89999961853027,1.61000001430511
+11,3367,Parrott-Phelan canal trap box,canal trap box,2025-03-23T09:15:16Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,831.0,,8.89999961853027,1.61000001430511
+11,3368,Parrott-Phelan canal trap box,canal trap box,2025-03-24T09:00:25Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,811.0,,9.80000019073486,1.60000002384186
+11,3369,Parrot-Phelan RST,PP RST,2025-03-24T09:15:59Z,Continue trapping,Processed fish,Trap functioning normally,7620.0,4.5,5.15000009536743,Yes,,,,
+11,3370,Parrott-Phelan canal trap box,canal trap box,2025-03-25T08:30:45Z,Continue trapping,Processed fish,Trap functioning normally,,,,Yes,844.0,,10.5,1.42999994754791
+11,3371,Parrot-Phelan RST,PP RST,2025-03-25T08:45:59Z,Continue trapping,Processed fish,Trap functioning normally,7447.0,5.80000019073486,6.0,Yes,837.0,,10.5,1.42999994754791
