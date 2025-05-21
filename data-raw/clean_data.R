@@ -57,7 +57,7 @@ butte_historical_catch <- butte_historical_catch |>
                                  subSiteName == "okie dam 2" ~ "pp rst 2",
                                  subSiteName == "okie dam fyke trap" ~ "canal trap box",
                                  TRUE ~ subSiteName)) |>
-  filter(visitTime < "2015-11-3") |>
+  filter(visitTime < "2015-11-3") |># if we don't filter out dates greater than 11-3-2015 it will result in duplicates
   select(-c(time)) |> glimpse()
 write_csv(butte_historical_catch, "data/historic_data/butte_catch.csv")
 # combine
@@ -98,8 +98,6 @@ butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
                                 TRUE ~ subsite),
          trapVisitID = as.numeric(trap_visit_id),
          includeCatch = ifelse(include == TRUE, "Yes", "No")) |>
-  mutate(time = "12:00:00",
-         visitTime = lubridate::ymd_hms(paste(visitTime, time))) |>
   rename(visitType = visit_type,
          fishProcessed = fish_processed,
          trapFunctioning = trap_functioning,
@@ -115,9 +113,10 @@ butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
             time, sample_period_revolutions,
             comments, trap_visit_id, include, trap_stop_time,
             stream, counterAtStart)) |>
+  filter(visitTime < "2015-11-3") |># if we don't filter out dates greater than 11-3-2015 it will result in duplicates
   glimpse()
 
-write.csv(butte_historical_trap, "data/historic_data/butte_trap.csv", row.names = FALSE)
+write_csv(butte_historical_trap, "data/historic_data/butte_trap.csv")
 # combine
 trap_final <- bind_rows(trap, butte_historical_trap) |>
   glimpse()
