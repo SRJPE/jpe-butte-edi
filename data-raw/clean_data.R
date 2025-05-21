@@ -57,8 +57,9 @@ butte_historical_catch <- butte_historical_catch |>
                                  subSiteName == "okie dam 2" ~ "pp rst 2",
                                  subSiteName == "okie dam fyke trap" ~ "canal trap box",
                                  TRUE ~ subSiteName)) |>
+  filter(visitTime < "2015-11-3") |>
   select(-c(time)) |> glimpse()
-write.csv(butte_historical_catch, "data/historic_data/butte_catch.csv", row.names = FALSE)
+write_csv(butte_historical_catch, "data/historic_data/butte_catch.csv")
 # combine
 final_catch <- bind_rows(catch, butte_historical_catch) |>
   glimpse()
