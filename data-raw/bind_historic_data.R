@@ -11,7 +11,7 @@ append_historic_data <- function(historic_path, new_path) {
 
   # Unzip new_path
   unzip(folder_path, exdir = temp_dir)
-  new_file <- file.path(temp_dir, basename(new_path))
+  new_file <- file.path(paste0(temp_dir,"/butte"), basename(new_path))
 
   # Load historic data
   historic_data <- readr::read_csv(historic_path)
@@ -22,7 +22,9 @@ append_historic_data <- function(historic_path, new_path) {
     readr::read_csv(new_file)
   }
   # Combine data
-  full_data <- dplyr::bind_rows(historic_data, new_data)
+  full_data <- dplyr::bind_rows(historic_data,
+                                new_data |>
+                                  mutate(visitTime = as.Date(visitTime, format = "%m/%d/%y")))
   # print(new_path)
   print(colnames(full_data))
   if (grepl("butte_catch.csv", new_path)) {
@@ -65,7 +67,7 @@ append_historic_data <- function(historic_path, new_path) {
   }
   # Write updated data back to the temporary directory
   write_csv(full_data, new_file)
-  setwd(temp_dir)
+  setwd(paste0(temp_dir, "/butte"))
   files_to_zip <- list.files(pattern = "^butte", recursive = TRUE)
 
   zip(
@@ -81,4 +83,3 @@ full_historic_path <- paste0("data/historic_data/", path)
 full_new_data_path <- paste0("data/butte.zip/", path)
 
 mapply(append_historic_data, full_historic_path, full_new_data_path)
-
