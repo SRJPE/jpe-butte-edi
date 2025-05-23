@@ -11,7 +11,7 @@ append_historic_data <- function(historic_path, new_path) {
 
   # Unzip new_path
   unzip(folder_path, exdir = temp_dir)
-  new_file <- file.path(paste0(temp_dir,"/butte"), basename(new_path))
+  new_file <- file.path(paste0(temp_dir), basename(new_path))
 
   # Load historic data
   historic_data <- readr::read_csv(historic_path)
@@ -67,7 +67,7 @@ append_historic_data <- function(historic_path, new_path) {
   }
   # Write updated data back to the temporary directory
   write_csv(full_data, new_file)
-  setwd(paste0(temp_dir, "/butte"))
+  setwd(paste0(temp_dir))
   files_to_zip <- list.files(pattern = "^butte", recursive = TRUE)
 
   zip(
