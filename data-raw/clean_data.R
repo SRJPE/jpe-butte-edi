@@ -2,31 +2,17 @@ library(tidyverse)
 library(readxl)
 library(googleCloudStorageR)
 
+# This script is used to generate historic data that do not exist in
+# the CAMP database. Data in the CAMP database are emailed and updated
+# automatically. Historic data are generated, saved in a static file, and
+# appended to the current data.
 
 # set up for google cloud -------------------------------------------------
 gcs_auth(json_file = Sys.getenv("GCS_AUTH_FILE"))
 gcs_global_bucket(bucket = Sys.getenv("GCS_DEFAULT_BUCKET"))
 
-
-# CAMP database table - 2015-2023
-catch <- read_xlsx("data-raw/butte_catch.xlsx",
-                   sheet = "Catch_Raw_EDI",
-                   col_types = c("numeric", "numeric", "numeric", "text", "numeric",
-                                "text", "text", "text", "numeric", "numeric",
-                                "numeric", "date", "text", "text", "text",
-                                "text", "text")) |>
-  mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
-                                TRUE ~ subSiteName),
-         siteName = ifelse(siteName %in% c("Okie RST", "Parrot-Phelan RST", "Parrott-Phelan canal trap box"),
-                           "Parrot-Phelan", siteName),
-         commonName = tolower(commonName),
-         atCaptureRun = tolower(atCaptureRun),
-         lifeStage = tolower(lifeStage),
-         siteName = tolower(siteName),
-         subSiteName = tolower(subSiteName)) |> glimpse()
-
 # historical table
-gcs_get_object(object_name = "standard-format-data/standard_rst_catch.csv",
+gcs_get_object(object_name = "standard-format-data/standard_rst_catch_081225.csv",
                bucket = gcs_get_global_bucket(),
                saveToDisk = here::here("data-raw", "standard_catch.csv"),
                overwrite = TRUE)
@@ -60,32 +46,13 @@ butte_historical_catch <- butte_historical_catch |>
   filter(visitTime < "2015-11-3") |># if we don't filter out dates greater than 11-3-2015 it will result in duplicates
   select(-c(time)) |> glimpse()
 write_csv(butte_historical_catch, "data/historic_data/butte_catch.csv")
-# combine
-final_catch <- bind_rows(catch, butte_historical_catch) |>
-  glimpse()
-
-write_csv(final_catch, here::here("data","butte_catch_edi.csv"))
-
-# CAMP database table - 2015-2023
-trap <- read_xlsx("data-raw/butte_trap.xlsx",
-                  sheet = "Trap_Visit_EDI") |>
-  mutate(subSiteName = case_when(subSiteName == "Okie RST" ~ "PP RST",
-                                 TRUE ~ subSiteName),
-         siteName = ifelse(siteName %in% c("Okie RST", "Parrot-Phelan RST", "Parrott-Phelan canal trap box"),
-                           "Parrot-Phelan", siteName),
-         # dissolvedOxygen = as.numeric(dissolvedOxygen),
-         siteName = tolower(siteName),
-         subSiteName = tolower(subSiteName),
-         visitType = tolower(visitType),
-         fishProcessed = tolower(fishProcessed),
-         trapFunctioning = tolower(trapFunctioning)) |> glimpse()
 
 # historical table
-
 gcs_get_object(object_name = "standard-format-data/standard_rst_trap.csv",
                bucket = gcs_get_global_bucket(),
                saveToDisk = here::here("data-raw", "standard_trap.csv"),
                overwrite = TRUE)
+
 # TODO missing 2009, 2010, 2011
 butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
   filter(stream == "butte creek",
@@ -117,66 +84,5 @@ butte_historical_trap <- read_csv("data-raw/standard_trap.csv") |>
   glimpse()
 
 write_csv(butte_historical_trap, "data/historic_data/butte_trap.csv")
-# combine
-trap_final <- bind_rows(trap, butte_historical_trap) |>
-  glimpse()
 
-write_csv(trap_final, here::here("data", "butte_trap_edi.csv"))
-
-# forkLength and totalLength are NA bc they haven't been measuring recaptured fish
-# removed actualcountID
-recapture <- read_xlsx(here::here("data-raw", "butte_recapture_edi.xlsx"),
-                       sheet = "Recapture_EDI",
-                       col_types = c("numeric", "numeric", "numeric", "text", "numeric",
-                                     "text", "text", "text", "text", "text", "numeric",
-                                     "numeric", "numeric", "numeric", "date",
-                                     "text", "text", "text", "text", "text",
-                                     "text", "text")) |>
-  select(-actualCountID) |> glimpse()
-write_csv(recapture, here::here("data","butte_recapture_edi.csv"))
-
-# I do not think we need to upload this right now but will have it available for in the future
-release_fish <- read_xlsx(here::here("data-raw", "butte_releasefish_edi.xlsx"))
-write_csv(release_fish, here::here("data", "butte_releasefish_edi.csv"))
-
-
-release <- read_xlsx(here::here("data-raw", "butte_release_edi.xlsx"),
-                     sheet = "Release_EDI",
-                     col_types = c("numeric", "numeric", "text", "text", "text",
-                                   "text", "text", "text", "text", "numeric",
-                                   "date", "numeric", "text", "text", "text",
-                                   "text", "text")) |>
-  mutate(sourceOfFishSite = ifelse(sourceOfFishSite == "Parrott-Phelan canal trap box", "Parrot-Phelan canal trap box", sourceOfFishSite),
-         releaseSite = ifelse(releaseSite == "Parrott-Phelan e-test release site", "Parrot-Phelan e-test release site", releaseSite)) |>
-  glimpse()
-write_csv(release, here::here("data","butte_release_edi.csv"))
-
-# TODO write code that checks the data with lookups
-# flag if not in the lookup table
-
-# Create lookup table
-project <- 11
-fish_origin <- unique(catch$fishOrigin)
-lifestage <- unique(catch$lifeStage)
-mort <- unique(catch$mort)
-actual_count <- unique(catch$actualCount)
-site <- unique(catch$siteName)
-subsite <- unique(catch$subSiteName)
-visit_type <- unique(catch$visitType)
-fish_processed <- unique(trap$fishProcessed)
-trap_functioning <- unique(trap$trapFunctioning)
-include_catch <- unique(trap$includeCatch)
-marked_run <- unique(release$markedRun)
-marked_lifestage <- unique(release$markedLifeStage)
-marked_origin <- unique(release$markedFishOrigin)
-source_fish <- unique(release$sourceOfFishSite)
-release_site <- unique(release$releaseSite)
-release_subsite <- unique(release$releaseSubSite)
-mark_type <- unique(release$appliedMarkType)
-mark_color <- unique(release$appliedMarkColor)
-mark_position <- unique(release$appliedMarkPosition)
-
-# define existing codes
-# check data
-# warning message if new code, data type, print
 
