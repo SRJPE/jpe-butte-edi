@@ -1,3 +1,5 @@
 projectDescriptionID,releaseID,commonName,markedRun,markedLifeStage,markedFishOrigin,sourceOfFishSite,releaseSite,releaseSubSite,nReleased,releaseTime,testDays,appliedMarkType,appliedMarkColor,appliedMarkPosition,appliedMarkCode,includeAnalysis
 11,286,Chinook salmon,Spring,,Natural,,Parrott-Phelan e-test release site,,196.0,2026-01-20T11:50:17Z,7.0,Pigment / dye,Brown,Whole body,,Yes
-11,287,Chinook salmon,Spring,,Natural,,Parrott-Phelan e-test release site,,115.0,2026-01-28T11:07:17Z,7.0,Pigment / dye,Brown,Whole body,,Yes
+11,287,Chinook salmon,Spring,,Natural,,Parrott-Phelan e-test release site,,115.0,2026-01-28T11:07:17Z,6.0,Pigment / dye,Brown,Whole body,,Yes
+11,288,Chinook salmon,Spring,,Natural,,Parrott-Phelan e-test release site,,200.0,2026-02-03T10:05:17Z,7.0,Pigment / dye,Brown,Whole body,,Yes
+11,289,Chinook salmon,Spring,Parr,Natural,Parrot-Phelan RST,Parrott-Phelan e-test release site,,200.0,2026-02-10T11:30:17Z,7.0,Pigment / dye,Brown,Whole body,,Yes
